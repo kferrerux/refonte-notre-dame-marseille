@@ -1,0 +1,318 @@
+/* Basilique Notre Dame de la Garde - Refonte par FERRER KEVIN @2024 */
+
+/* Google fonts afin de définir la police que le navigateur devra afficher */
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+/* Sélecteur universel qui va permettre d'initialiser les marges externes/internes à 0, les boites,
+la police d'écriture par défaut et le style des liens (a) par défaut */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prosto One', 'Serif';
+    text-decoration: none;
+}
+
+/* Le corps de la page */
+body {
+    background-color: #FFFFFF;
+}
+/* Fin du corps de la page */
+
+/* La balise html <header> qui contiendra le logo du site et sa navigation */
+header {
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #23232c16;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    color: #23232c;
+    font-size: 0.7rem;
+    padding: 10px;
+    list-style: none;
+}
+
+header nav ul li:hover {
+    border-top: #23232c 88px solid;
+    text-decoration: double;
+    background-color: #23232c;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+#logodiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#logo {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 2%;
+}
+
+#logodiv h1 {
+    color: #23232c;
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+
+#langs img {
+    width: 30px;
+    height: 30px;
+}
+
+#langs img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    width: 30px;
+    height: 30px;
+}
+/* fin La balise html <header> qui contient le logo du site et sa navigation */
+
+/* La balise main contient une image et un cta (call-to-action) */
+#main {
+    height: 100vh;
+    background: url('assets/imgs/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -100px;
+    background-blend-mode: overlay;
+    background-color: #00000018;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main h1 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.514);
+    color: #FFFFFF;
+    font-size: 3rem;    
+    font-weight: lighter;
+    padding: 1%;
+}
+
+#main button {
+    border: none;
+    padding: 2%;
+    background-color: #ca6800;
+    color: #FFFFFF;
+}
+
+#main button:hover {
+    background-color: #FFFFFF;
+    color: #23232c;
+    transition: all 0.3s ease;
+}
+/* fin de la <main> */
+
+/* <section> histoire */
+#history {
+    height: 100vh;
+    color: #FFFFFF;
+    background-color: #23232c;
+    padding: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* #history div {
+
+} */
+
+#history h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-bottom: 2%;
+}
+
+#history p {
+    font-weight: lighter;
+    line-height: 140%;
+}
+
+#history img {
+    width: 500px;
+    height: 400px;
+    margin: 50px;
+    border-top-left-radius: 10%;
+}
+
+#history img:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+    width: 500px;
+    height: 400px;
+    margin: 50px;
+    border-top-left-radius: 0%;
+}
+/* fin de la <section> histoire */
+
+/* <section> infos */
+#infos {
+    background: url('assets/imgs/bg_rubriques.jpg');
+    background-repeat: no-repeat;
+    background-size: 12%;
+    background-position: left bottom;
+    height: 100vh;
+    color: #23232c;
+    background-color: #FFFFFF;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+hr {
+    margin: 3%;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+#content {
+    background-color: #ca6800;
+    color: #FFFFFF;
+    width: 50%;
+    padding: 5%;
+    line-height: 140%;
+    border-bottom-right-radius: 10%;
+}
+
+#content:hover {
+    border-bottom-right-radius: 0%;
+    transition: all 0.3s ease;
+}
+
+#infos ul {
+    padding: 5%;
+    width: 300px;
+}
+
+#infos ul li {
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 1rem;
+    line-height: 140%;
+    font-weight: lighter;
+    padding: 1%;
+}
+
+#infos ul li:hover {
+    background-color: #23232c;
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 1%;
+    font-weight: lighter;
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+}
+
+#rubriques {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#cat {
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+#cat h2 {
+    font-size: 1rem;
+}
+
+/* .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 2%;
+    background-color: #23232c;
+    color: #FFFFFF;
+    width: 300px;
+}
+
+.card:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 2%;
+    width: 300px;    
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    background-color: #ca6800;
+    color: #FFFFFF;
+}
+
+.card h3 {
+    font-weight: lighter;
+}
+
+.card p {
+    font-size: 0.8rem;
+} */
+/* fin de la <section> infos */
+
+/* le <footer> / pied de page */
+#footer {
+    font-size: 0.6rem;
+    background-color: #23232c;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3%;
+    border-top: 1px solid #23232c16;
+}
+
+#about {
+    width: 25%;
+}
+
+#socials {
+    text-align: center;
+}
+
+#socials i {
+    margin: 5%;
+}
+/* fin du <footer> / pied de page */
