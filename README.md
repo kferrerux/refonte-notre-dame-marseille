@@ -9,7 +9,7 @@
 - [Contribuer](##contribuer)
 
 ## Aperçu 👀
-![harry](https://github.com/kferrerux/laboutiquedharry/assets/77007630/b5266b00-0d13-4e99-8bf4-36c748d5bffb)
+![harry](https://github.com/kferrerux/refonte-notre-dame-marseille/assets/77007630/115fdede-aeea-484e-a3c3-1e0f3656c003)
 *<p align=center>La boutique d'Harry</p>*
 
 ## Caractéristiques 🕵️
