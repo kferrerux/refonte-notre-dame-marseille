@@ -58,7 +58,7 @@ header nav ul li:hover {
     cursor: pointer; 
     background-color: #23232c;
     color: #FFFFFF;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     padding: 10px;
     transition: all 0.3s ease;
 }
@@ -175,14 +175,13 @@ li.nav-item:hover {
 
 #infos ul {
     padding: 5%;
-    width: 300px;
 }
 
 #informations ul li {
     cursor: pointer;
     list-style-type: none;
-    font-size: 1rem;
     padding: 1%;
+    width: 300px;
 }
 
 #informations ul li:hover {
@@ -192,8 +191,7 @@ li.nav-item:hover {
     text-align: center;
     transition: all 0.3s ease;
     transform: scale(1.2);
-    font-size: 1rem;
-    
+    width: 300px;
 }
 
 .bg-infos {
@@ -297,6 +295,10 @@ li.nav-item:hover {
 @media (min-width: 1400px) { 
     header .row {
         width: 100% !important;
+    }
+    header nav ul li {
+        font-family: 'Prosto One', 'Serif' !important;
+        font-size: 0.9rem;
     }
     #logodiv {
         margin-left: 15%;
