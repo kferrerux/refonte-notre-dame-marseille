@@ -21,7 +21,7 @@ body {
 
 /* La balise <header> qui contiendra le logo du site et sa navigation */
 header {
-    z-index: 2;
+    z-index: 3;
     background-color: rgb(255, 255, 255);
     position: fixed;
     top: 0;
@@ -34,15 +34,15 @@ header {
     border-bottom: 1px solid #23232c16;
 }
 
-header nav ul {
+/* header nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
+} */
 
 header nav ul li {
     font-family: 'Prosto One', 'Serif';
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 1px;
     cursor: pointer;
     color: #23232c;
@@ -60,6 +60,15 @@ header nav ul li:hover {
     color: #FFFFFF;
     font-size: 0.7rem;
     padding: 10px;
+    transition: all 0.3s ease;
+}
+
+a.nav-link:hover {
+    color: #ffffff !important;
+}
+
+li.nav-item:hover {
+    text-transform: #ffffff !important;
     transition: all 0.3s ease;
 }
 
@@ -106,7 +115,6 @@ header nav ul li:hover {
     padding: 2%;
     background-color: #FFFFFF;
     color: #23232c;
-    transform: scale(1.1);
     transition: all 0.3s ease;
 }
 
@@ -200,3 +208,97 @@ header nav ul li:hover {
     background-color: #23232c;
 }
 /* fin du <footer> / pied de page */
+
+/* responsive */
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    .navbar-collapse {
+        padding: 5%;
+        background-color: #FFFFFF;
+        color: #23232c;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        text-align: center;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .carousel-inner {
+        display: none;
+    }
+    .carousel-control-prev {
+        display: none !important;
+    }
+    .carousel-control-next {
+        display: none !important;
+    }
+    .carousel-caption {
+        display: none !important;
+    }
+    .carousel-indicators {
+        display: none !important;
+    }
+    #history img {
+        border-radius: 0 !important;
+    }
+    #history {
+        margin-top: 121px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    header .row {
+        width: 75% !important;
+    }
+    .navbar-collapse {
+        padding: 5%;
+        background-color: #FFFFFF;
+        color: #23232c;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        text-align: center;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    header .row {
+        width: 75% !important;
+    }
+    .navbar-collapse {
+        padding: 5%;
+        background-color: #FFFFFF;
+        color: #23232c;
+        position: absolute;
+        top: 100%;
+        right: 55%;
+        width: 50%;
+        text-align: center;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media ( min-width: 993px) and (max-width: 1399px) { 
+    header .row {
+        width: 100% !important;
+    }
+    #logodiv {
+        margin-left: 8%;
+    }
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    header .row {
+        width: 100% !important;
+    }
+    #logodiv {
+        margin-left: 15%;
+    }
+ }
