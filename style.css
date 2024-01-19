@@ -225,7 +225,7 @@ li.nav-item:hover {
 /* Very small devices (smaller than 576px) */
 @media (min-width: 320px) {
     .btn-main {
-        margin-top: -20%;
+        margin-top: -5%;
         text-decoration: none;
         font-weight: 700;
         border: none;
@@ -509,12 +509,12 @@ li.nav-item:hover {
         text-align: center;
     }
     #header .row {
-        width: 97% !important;
+        width: 100% !important;
     }
     #logodiv {
         width: 300px !important;
     }
- }
+    }
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
     .btn-main {
@@ -568,7 +568,7 @@ li.nav-item:hover {
         text-align: center;
     }
     #header .row {
-        width: 97% !important;
+        width: 100% !important;
     }
     #logodiv {
         width: 300px !important;
