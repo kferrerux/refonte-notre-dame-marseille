@@ -417,37 +417,13 @@ li.nav-item:hover {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .btn-main {
-        margin-top: 0%;
-        text-decoration: none;
-        font-weight: 700;
-        border: none;
-        padding: 2%;
-        background-color: #f39e00;
-        color: #FFFFFF;
-        width: 400px !important;
+        display: none
     }
     .btn-main:hover {
-        text-decoration: none;
-        font-weight: 700;
-        border-left: 250px solid #23232c;
-        padding: 2%;
-        background-color: #FFFFFF;
-        color: #23232c;
-        transition: all 0.3s ease;
+        all: unset;
     }
     .navbar-collapse {
-        padding: 5%;
-        background-color: #ffffff;
-        color: #23232c;
-        position: absolute;
-        top: 103%;
-        left: -15%;
-        width: 100% !important;
-        margin: 0 !important;
-        border-top: 3px solid #f39e00;
-        text-align: center;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
+        all: unset;
     }
     .carousel-inner {
         display: none;
@@ -484,6 +460,7 @@ li.nav-item:hover {
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .btn-main {
+        display: block;
         margin-top: 0%;
         text-decoration: none;
         font-weight: 700;
@@ -494,6 +471,7 @@ li.nav-item:hover {
         width: 400px !important;
     }
     .btn-main:hover {
+        display: block;
         text-decoration: none;
         font-weight: 700;
         border-left: 250px solid #23232c;
@@ -540,19 +518,22 @@ li.nav-item:hover {
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
     .btn-main {
-        margin-top: 18%;
+        display: block;
+        margin-top: 0%;
         text-decoration: none;
         font-weight: 700;
         border: none;
         padding: 2%;
         background-color: #f39e00;
         color: #FFFFFF;
-        width: 100% !important;
+        width: 60% !important;
     }
     .btn-main:hover {
+        display: block;
+        margin-top: 0%;
         text-decoration: none;
         font-weight: 700;
-        border-left: 250px solid #23232c;
+        border-left: 100px solid #23232c;
         padding: 2%;
         background-color: #FFFFFF;
         color: #23232c;
