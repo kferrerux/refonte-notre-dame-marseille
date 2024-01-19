@@ -53,14 +53,18 @@ header nav ul li {
 
 header nav ul li:hover {  
     font-family: 'Prosto One', 'Serif';
-    font-weight: 400;
-    letter-spacing: 4px;
+    font-weight: 700;
+    letter-spacing: 2px;
     cursor: pointer; 
     background-color: #23232c;
     color: #FFFFFF;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding: 10px;
     transition: all 0.3s ease;
+}
+
+a.nav-link {
+    color: #23232c !important;
 }
 
 a.nav-link:hover {
@@ -104,14 +108,18 @@ li.nav-item:hover {
 
 /* La balise main */
 .btn-custom {
+    text-decoration: none;
+    font-weight: 700;
     border: none;
     padding: 2%;
-    background-color: #ca6800;
+    background-color: #f39e00;
     color: #FFFFFF;
 }
 
 .btn-custom:hover {
-    border: none;
+    text-decoration: none;
+    font-weight: 700;
+    border-left: 15px solid #23232c;
     padding: 2%;
     background-color: #FFFFFF;
     color: #23232c;
@@ -160,16 +168,20 @@ li.nav-item:hover {
 #history img {
     border-top-left-radius: 20px;
 }
-
-#history img:hover {
-    transition: all 0.3s ease;
-    transform: scale(1.1);
-    border-top-left-radius: 0%;
-}
 /* fin de la <section> histoire */
 
 /* <section> infos */
+#infos-cards {
+    border: none !important;
+}
+
+#infos-cards div {
+    border: none !important;
+    padding: 2% ;
+}
+
 #informations {
+    background-color: #f39e00;
     background: url('assets/imgs/bg_rubriques.jpg') no-repeat left bottom / 10%;
 }
 
@@ -298,7 +310,7 @@ li.nav-item:hover {
     }
     header nav ul li {
         font-family: 'Prosto One', 'Serif' !important;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
     #logodiv {
         margin-left: 15%;
