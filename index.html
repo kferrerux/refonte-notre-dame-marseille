@@ -13,21 +13,19 @@
 </head>
 <body>
 <!-- le menu de navigation principal (voir aussi navbar.js) -->
-    <header id="header">
-        <div class="row">
-        <nav class="navbar navbar-expand-lg">
-            <div id="logodiv" class="w-auto">
-                <img id="logo" src="assets/imgs/logo.png" alt="Logo">
-                <h6>Basilique Notre-Dame de la Garde</h6>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+    <header id="header" class="d-flex align-center row-cols-1 row-cols-sm-1 row-cols-md-10 row-cols-lg-1">
+        <nav class="navbar navbar-expand-lg d-flex align-items-center justify-content-around">
+          <div id="logodiv">
+            <a href="index.html"><img class="ms-0 ms-sm-0 ms-md-0 ms-lg-3" id="logo" src="assets/imgs/logo.png" alt="Logo Basilique Notre-Dame de la Garde"></a>
+            <!-- <h6>Basilique Notre-Dame de la Garde</h6> -->
+          </div>
+            <div class="d-flex align-items-center">
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
+            </div>
+            <div class="collapse navbar-collapse align-items-center justify-content-around " id="navbarScroll">
               <ul class="navbar-nav navbar-nav-scroll">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">PRIER</a>
-                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">VISITER</a>
                 </li>
@@ -35,60 +33,30 @@
                   <a class="nav-link" href="#">ART ET HISTOIRE</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">INFOS PRATIQUES</a>
+                  <a class="nav-link" href="#">INFORMATIONS</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">FAIRE UN DON</a>
                 </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    LANGUES
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">FRANCAIS 🇫🇷</a></li>
+                    <li><a class="dropdown-item" href="#">ENGLISH 🇬🇧</a></li>
+                    <li><a class="dropdown-item" href="#">ITALIANO 🇮🇹</a></li>
+                  </ul>
+                </li>
               </ul>
-              <form class="d-flex ms-3" role="search">
+              <form id="form-responsive" class=" d-flex w-25" role="search">
                 <input class="form-control me-2" type="search" placeholder="Recherchez" aria-label="Recherchez">
                 <button class="btn btn-success" type="submit">OK</button>
               </form>
-              <div id="langs" class="mx-4 my-3">
-                <img src="assets/imgs/frflag.jpg" alt="FRENCH">
-                <img src="assets/imgs/ukflag.jpg" alt="UK">
             </div>
-            </div>
-        </nav>
-        </div>        
+        </nav>   
     </header>
 <!-- fin du menu de navigation principal -->
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Link
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Link</a>
-            </li> -->
-<!-- CUSTOM - <header id="header">
-
-        <div id="logodiv">
-            <img id="logo" src="assets/imgs/logo.png" alt="Logo">
-            <h6>Basilique Notre-Dame de la Garde</h6>
-        </div>
-        <nav>
-            <ul>
-                <li>PRIER</li>
-                <li>VISITER</li>
-                <li>ART ET HISTOIRE</li>
-                <li>INFOS PRATIQUES</li>
-                <li>FAIRE UN DON</li>
-            </ul>
-        </nav>
-        <div id="langs">
-            <img src="assets/imgs/frflag.jpg" alt="FRENCH">
-            <img src="assets/imgs/ukflag.jpg" alt="UK">
-        </div>
-
-</header> -->
 <!-- main -->
     <main>
 <!-- ici le carousel 100vh -->
@@ -100,14 +68,14 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="assets/imgs/slide03.jpg" class="d-block w-100 vh-100" alt="image slider 1">
+                <img src="assets/imgs/slide02.jpg" class="d-block w-100 vh-100" alt="image slider 1">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Une visite de Notre-Dame</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="assets/imgs/slide02.jpg" class="d-block w-100 vh-100" alt="image slider 2">
+                <img src="assets/imgs/slide03.jpg" class="d-block w-100 vh-100" alt="image slider 2">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>La beauté de la Basilique</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -237,8 +205,8 @@
             </div>
         </div>
         <div class="text-center">
-        © 2024. Site web par <a class="text-white text-decoration-none"
-        href="https://github.com/kferrerux" target="_blank">FERRER KEVIN</a>
+        <strong>© 2024 SITE WEB PAR <a class="text-white text-decoration-none"
+        href="https://github.com/kferrerux" target="_blank">FERRER KEVIN</a></strong>
         </div>
     </footer>
 <!-- fin du footer -->
