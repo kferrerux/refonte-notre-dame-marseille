@@ -23,7 +23,7 @@ que la navigation (expérience utilisateur). **La partie responsive arrivera au 
 - Visual Studio Code
 - Git
 - HTML
-- CSS (CUSTOM)
+- BOOTSTRAP & CSS (CUSTOM)
 - JAVASCRIPT
 
 ## Comment utiliser ⏯️
