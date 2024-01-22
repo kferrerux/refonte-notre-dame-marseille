@@ -252,6 +252,9 @@ li.nav-item:hover {
     .carousel-indicators {
         display: none !important;
     }
+    #carouselExampleCaptions button {
+        display: none !important;
+    }
     #history img {
         border-radius: 0 !important;
     }
@@ -264,6 +267,9 @@ li.nav-item:hover {
     }
     #form-responsive {
         width: 100% !important;
+    }
+    #serendre {
+        padding: 0 !important;
     }
     #mapinfos {
         width: 100% !important;
@@ -316,6 +322,9 @@ li.nav-item:hover {
         display: none !important;
     }
     .carousel-indicators {
+        display: none !important;
+    }
+    #carouselExampleCaptions button {
         display: none !important;
     }
     #history img {
@@ -381,6 +390,9 @@ li.nav-item:hover {
     .carousel-indicators {
         display: none !important;
     }
+    #carouselExampleCaptions button {
+        display: none !important;
+    }
     #history img {
         border-radius: 0 !important;
     }
@@ -424,6 +436,9 @@ li.nav-item:hover {
     .carousel-indicators {
         display: none !important;
     }
+    #carouselExampleCaptions button {
+        display: none !important;
+    }
     #history img {
         border-radius: 0 !important;
     }
@@ -436,6 +451,9 @@ li.nav-item:hover {
     }
     #form-responsive {
         width: 25% !important;
+    }
+    #serendre {
+        padding: 4% !important;
     }
     #mapinfos {
         width: 45% !important;
@@ -482,6 +500,9 @@ li.nav-item:hover {
     .carousel-indicators {
         display: block !important;
     }
+    #carouselExampleCaptions button {
+        display: block !important;
+    }
     #history img {
         border-radius: 0 !important;
     }
@@ -494,6 +515,9 @@ li.nav-item:hover {
     }
     #form-responsive {
         width: 25% !important;
+    }
+    #serendre {
+        padding: 4% !important;
     }
     #mapinfos {
         width: 45% !important;
@@ -541,6 +565,9 @@ li.nav-item:hover {
     .carousel-indicators {
         display: block !important;
     }
+    #carouselExampleCaptions button {
+        display: block !important;
+    }
     #history img {
         border-radius: 0 !important;
     }
@@ -553,6 +580,9 @@ li.nav-item:hover {
     }
     #form-responsive {
         width: 25% !important;
+    }
+    #serendre {
+        padding: 4% !important;
     }
     #mapinfos {
         width: 45% !important;
