@@ -9,8 +9,8 @@
 - [Contribuer](##contribuer)
 
 ## Aperçu 👀
-![harry](https://github.com/kferrerux/refonte-notre-dame-marseille/assets/77007630/115fdede-aeea-484e-a3c3-1e0f3656c003)
-*<p align=center>La boutique d'Harry</p>*
+![harry](https://github.com/kferrerux/refonte-notre-dame-marseille/assets/77007630/a1229be7-31f4-41d1-8201-4fc574f24653)
+*<p align=center>Notre-Dame de la Garde - Index</p>*
 
 ## Caractéristiques 🕵️
 
@@ -23,7 +23,7 @@ que la navigation (expérience utilisateur). **La partie responsive arrivera au 
 - Visual Studio Code
 - Git
 - HTML
-- CSS (CUSTOM)
+- BOOTSTRAP & CSS (CUSTOM)
 - JAVASCRIPT
 
 ## Comment utiliser ⏯️
