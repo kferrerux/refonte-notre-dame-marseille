@@ -149,10 +149,9 @@ li.nav-item:hover {
     padding: 2% ;
 }
 
-#informations {
+/* #informations {
     background-color: #f39e00;
-    background: url('assets/imgs/bg_rubriques.jpg') no-repeat left bottom / 10%;
-}
+} */
 
 #infos ul {
     padding: 5%;
@@ -179,8 +178,23 @@ li.nav-item:hover {
     background-color: #23232c;
     border-bottom-right-radius: 20px;
 }
-
 /* fin de la <section> infos */
+
+/* <section> ou trouver notre-dame */
+#serendre {
+    background: url('assets/imgs/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+}
+
+#mapinfos {
+    width: 45%;
+    background: url('assets/imgs/bg_rubriques.jpg') no-repeat left bottom / 15%;
+    background-color: #ffffff;
+}
+/* fin de la <section> ou trouver notre-dame */
 
 /* le <footer> / pied de page */
 .bg-footer {
@@ -249,6 +263,9 @@ li.nav-item:hover {
         text-align: center;
     }
     #form-responsive {
+        width: 100% !important;
+    }
+    #mapinfos {
         width: 100% !important;
     }
  }
@@ -377,6 +394,9 @@ li.nav-item:hover {
     #form-responsive {
         width: 100% !important;
     }
+    #mapinfos {
+        width: 100% !important;
+    }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -416,6 +436,9 @@ li.nav-item:hover {
     }
     #form-responsive {
         width: 25% !important;
+    }
+    #mapinfos {
+        width: 45% !important;
     }
 }
 /* X-Large devices (large desktops, 1200px and up) */
@@ -472,6 +495,9 @@ li.nav-item:hover {
     #form-responsive {
         width: 25% !important;
     }
+    #mapinfos {
+        width: 45% !important;
+    }
 }
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
@@ -527,5 +553,8 @@ li.nav-item:hover {
     }
     #form-responsive {
         width: 25% !important;
+    }
+    #mapinfos {
+        width: 45% !important;
     }
 }
