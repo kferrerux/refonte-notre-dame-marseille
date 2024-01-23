@@ -194,6 +194,11 @@ li.nav-item:hover {
     background: url('assets/imgs/bg_rubriques.jpg') no-repeat left bottom / 15%;
     background-color: #ffffff;
 }
+
+.accordion-button:hover {
+    background-color: #23232c;
+    color: #FFFFFF;
+}
 /* fin de la <section> ou trouver notre-dame */
 
 /* le <footer> / pied de page */
@@ -274,6 +279,12 @@ li.nav-item:hover {
     #mapinfos {
         width: 100% !important;
     }
+    #havefun-d {
+        display: none !important;
+    }
+    .havefun {
+        display: none !important;
+    }
  }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
@@ -339,6 +350,15 @@ li.nav-item:hover {
     }
     #form-responsive {
         width: 100% !important;
+    }
+    #mapinfos {
+        width: 100% !important;
+    }
+    #havefun-d {
+        display: none !important;
+    }
+    .havefun {
+        display: none !important;
     }
 }
 /* Medium devices (tablets, 768px and up) */
@@ -409,6 +429,12 @@ li.nav-item:hover {
     #mapinfos {
         width: 100% !important;
     }
+    #havefun-d {
+        display: none !important;
+    }
+    .havefun {
+        display: none !important;
+    }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -457,6 +483,13 @@ li.nav-item:hover {
     }
     #mapinfos {
         width: 45% !important;
+    }
+    #havefun-d {
+        display: block !important;
+    }
+    .havefun {
+        display: block !important;
+        font-size: 90px;
     }
 }
 /* X-Large devices (large desktops, 1200px and up) */
@@ -522,6 +555,13 @@ li.nav-item:hover {
     #mapinfos {
         width: 45% !important;
     }
+    #havefun-d {
+        display: block !important;
+    }
+    .havefun {
+        display: block !important;
+        font-size: 90px;
+    }
 }
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
@@ -585,6 +625,9 @@ li.nav-item:hover {
         padding: 4% !important;
     }
     #mapinfos {
-        width: 45% !important;
+        width: 50% !important;
+    }
+    .havefun {
+        font-size: 90px;
     }
 }

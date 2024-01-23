@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!------------------------ LE STYLE ------------------------>
     <link rel="stylesheet" href="style.css">
+<!------------------------ FIN DU STYLE ------------------------>
+<!------------------------ SCRIPTS & CDN'S ------------------------>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script defer src="navbar.js"></script>
-    <!-- <script defer src="history.js"></script> -->
+    <!-- <script defer src="history.js"></script> -->  
     <script defer src="https://kit.fontawesome.com/a95fff360e.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!------------------------ FIN DES SCRIPTS & CDN'S ------------------------>
     <title>Notre-Dame de La Garde</title>
 </head>
 <body>
-<!-- le menu de navigation principal (voir aussi navbar.js) -->
+<!------------------------ MENU DE NAVIGATION PRINCIPALE ------------------------>
     <header id="header" class="d-flex align-center row-cols-1 row-cols-sm-1 row-cols-md-10 row-cols-lg-1">
         <nav class="navbar navbar-expand-lg d-flex align-items-center justify-content-around">
           <div id="logodiv">
@@ -56,10 +60,10 @@
             </div>
         </nav>   
     </header>
-<!-- fin du menu de navigation principal -->
-<!-- main -->
+<!------------------------ FIN DU MENU DE NAVIGATION PRINCIPALE ------------------------>
+<!------------------------ LE CONTENU MAJEUR (MAIN/SECTIONS/ETC) ------------------------>
     <main>
-<!-- ici le carousel 100vh -->
+<!------------------------ LE CAROUSSEL 100VH ------------------------>
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators d-flex justify-content-center">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -98,13 +102,13 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-<!-- fin du carousel -->
-<!-- première section 'histoire' -->
+<!------------------------ FIN DU CAROUSEL ------------------------>
+<!------------------------ SECTION HISTOIRE ------------------------>
         <section id="history" class="p-5 d-flex align-items-center text-white">
             <div class="row align-items-center fs-4">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                 <img id="history-img" class="w-100" src="assets/imgs/history.jpg" alt="Image histoire Notre-Dame">
-                <button class="btn-main fs-4 position-absolute start-50 top-50 translate-middle z-1" type="button">Je visite la Basilique</button>
+                <a href="#serendre"><button class="btn-main fs-4 position-absolute start-50 top-50 translate-middle z-1" type="button">Je visite la Basilique</button></a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-7 p-sm-3 p-md-3 p-lg-5">
                     <h2 class="mt-3 mt-sm-3 mt-md-3 mt-lg-0">Chargée d'histoire</h2>
@@ -115,33 +119,13 @@
                 </div>
             </div>
         </section>
-<!-- fin de la section 'histoire' -->
-<!-- seconde section 'informations' -->
+<!------------------------ FIN DE LA SECTION HISTOIRE ------------------------>
+<!------------------------ SECTION INFORMATIONS ------------------------>
         <section id="informations" class="p-5">
             <div class="align-items-center fs-4">
                 <h2 class="text-center">Ce que l'on trouve à Notre-Dame</h2>
                 <p class="text-center">Une multitudes d'activités pour nos visiteurs</p>
                 <hr>
-              <!-- CONTENT TEST <div class="row">
-                  <div class="d-flex justify-content-center align-items-center text-center col-sm-12 col-md-5 col-lg-5">
-                        <ul class="list-unstyled">
-                            <li>- Horaires exceptionnels</li>
-                            <li>- Le musée</li>
-                            <li>- La boutique</li>
-                            <li>- Le restaurant</li>
-                            <li>- Le bar ephémère</li>
-                            <li>- Contact</li>
-                            <li>- Liens utiles</li>
-                            <li>- Relation presse</li>
-                            <li>- Demande de tournage</li>
-                        </ul>
-                  </div>
-                  <div class="bg-infos text-white p-4 p-sm-5 p-md-5 p-lg-5 col-12 col-sm-12 col-md-7 col-lg-7">
-                  Venez visiter le musée de Notre-Dame de la Garde! Histoire, spiritualité, architecture et art sacré se dévoilent.
-                  <br> <hr> 
-                  Tous les jours sauf lundi, 10H-12H et de 14H-17H 
-                  <button class="btn-custom w-100 my-3">En savoir plus</button>
-                </div> -->
             </div>
             <div id="infos-cards" class="row">
               <div class="fs-5 card col-12 col-sm-12 col-md-6 col-lg-4 my-4 my-sm-0 my-md-4 my-lg-0">
@@ -170,28 +154,73 @@
               </div>
             </div>
         </section>
-<!-- fin de la section 'informations' -->        
-<!-- troisième section 'se rendre à Notre-Dame' -->
+<!------------------------ FIN DE LA SECTION INFORMATIONS ------------------------>       
+<!------------------------ SECTION SE RENDRE A ------------------------>
         <section id="serendre" class="fs-5 p-5 p-sm-0 p-md-5 p-lg-5 d-flex align-items-center">
           <div id="mapinfos" class="p-5 text-justify">
-            <img class="w-100 mb-3" src="assets/imgs/map.png" alt="">
+            <img class="w-100 mb-3" src="assets/imgs/map.png" alt="Plan Notre-Dame de la Garde">
             <h2>Se rendre à Notre-Dame de la Garde</h2>
             <hr>
-            <p><strong>En voiture</strong> : Vous pouvez conduire jusqu'à la basilique. Le parking à proximité est généralement disponible.</p>
-
-            <p><strong>En transport en commun</strong> : Le bus 60 vous déposera près de la basilique. Vous pouvez vérifier les itinéraires et les horaires des transports en commun auprès des autorités locales de transport.</p>
-
-            <p><strong>À pied</strong> : Si vous êtes dans le centre-ville de Marseille, vous pouvez envisager une marche jusqu'à la basilique. Cependant, gardez à l'esprit que la colline sur laquelle se trouve Notre-Dame de la Garde est assez escarpée.</p>
-
-            <p><strong>En navette touristique</strong> : Certains tours touristiques proposent des visites guidées de la ville, incluant souvent une halte à Notre-Dame de la Garde.</p>
-
-           <p class="p-3 bg-success text-white"><strong>Assurez-vous de vérifier les horaires et les itinéraires actuels, car ils peuvent varier en fonction de la saison ou de tout événement particulier.</strong></p>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  <strong>Venir en voiture 🚘</strong>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    Vous pouvez conduire jusqu'à la basilique. Le parking à proximité est généralement disponible.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    <strong>Transports en commun 🚍</strong>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                    Le bus 60 vous déposera près de la basilique. Vous pouvez vérifier les itinéraires et les horaires des transports en commun auprès des autorités locales de transport.
+                    <button class="btn-custom bg-success radius text-white fw-bold w-100">Consulter les horaires</button>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <strong>Venir à pieds 🚶</strong>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    Si vous êtes dans le centre-ville de Marseille, vous pouvez envisager une marche jusqu'à la basilique. Cependant, gardez à l'esprit que la colline sur laquelle se trouve Notre-Dame de la Garde est assez escarpée.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    <strong>La navette touristique 🏞</strong>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body">
+                    Certains tours touristiques proposent des visites guidées de la ville, incluant souvent une halte à Notre-Dame de la Garde.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <div id="havefun-d" class="ms-4">
+          <h2 class="ms-3 havefun text-white text-center">BONNE VISITE <br> <hr> A TOUS</h2>
+        </div>
         </section>
-<!-- fin de la section 'se rendre à Notre-Dame' -->
+<!------------------------ FIN DE LA SECTION SE RENDRE A ------------------------>
     </main>
-<!-- fin de la main -->
-<!-- footer -->
+  <!------------------------ FIN DU CONTENU MAJEUR (MAIN/SECTIONS/ETC) ------------------------>
+  <!------------------------ LE PIED DE PAGE ------------------------>
     <footer class="w-100 bg-footer text-white p-3">
         <div class="bg-footer p-3 text-white row w-100">
             <div class="col-12 col-sm-12 col-md-12 my-md-5 my-lg-0 col-lg-3">
@@ -227,6 +256,6 @@
         href="https://github.com/kferrerux" target="_blank">FERRER KEVIN</a></strong>
         </div>
     </footer>
-<!-- fin du footer -->
+<!------------------------ FIN DU PIED DE PAGE ------------------------>
 </body>
 </html>
