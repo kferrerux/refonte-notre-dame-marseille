@@ -5,7 +5,6 @@
 
 /* Sélecteur universel qui va permettre d'initialiser les marges externes/internes à 0, les boites,
 la police d'écriture par défaut et le style des liens (a) par défaut */
-
 * ::before ::after {
     margin: 0;
     padding: 0;
@@ -13,13 +12,14 @@ la police d'écriture par défaut et le style des liens (a) par défaut */
     text-decoration: none;
 }
 
-/* Le corps de la page */
+/************************** CORPS DE LA PAGE ****************************
+-----------------------------------------------------------------------*/
 body {
     background-color: #FFFFFF;
 }
-/* Fin du corps de la page */
 
-/* La balise <header> qui contiendra le logo du site et sa navigation */
+/************************* BALISE - HEADER ******************************
+-----------------------------------------------------------------------*/
 header {
     z-index: 3;
     background-color: rgb(255, 255, 255);
@@ -75,9 +75,9 @@ li.nav-item:hover {
     width: 30px;
     height: 30px;
 }
-/* fin La balise <header> */
 
-/* La balise main */
+/****************************** BALISE MAIN *****************************
+-----------------------------------------------------------------------*/
 .btn-custom {
     text-decoration: none;
     font-weight: 700;
@@ -127,9 +127,9 @@ li.nav-item:hover {
     border-radius: 20px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.879);
 }
-/* fin de la <main> */
 
-/* <section> histoire */
+/******************** SECTION - HISTOIRE ********************************
+-----------------------------------------------------------------------*/
 #history {
     background-color: #23232c;
 }
@@ -137,9 +137,9 @@ li.nav-item:hover {
 #history img {
     border-top-left-radius: 20px;
 }
-/* fin de la <section> histoire */
 
-/* <section> infos */
+/******************** SECTION - INFORMATIONS ****************************
+-----------------------------------------------------------------------*/
 #infos-cards {
     border: none !important;
 }
@@ -148,10 +148,6 @@ li.nav-item:hover {
     border: none !important;
     padding: 2% ;
 }
-
-/* #informations {
-    background-color: #f39e00;
-} */
 
 #infos ul {
     padding: 5%;
@@ -178,9 +174,9 @@ li.nav-item:hover {
     background-color: #23232c;
     border-bottom-right-radius: 20px;
 }
-/* fin de la <section> infos */
 
-/* <section> ou trouver notre-dame */
+/******************** SECTION - OU TROUVER NOTRE DAME *******************
+-----------------------------------------------------------------------*/
 #serendre {
     background: url('assets/imgs/bg.jpg');
     background-repeat: no-repeat;
@@ -199,15 +195,15 @@ li.nav-item:hover {
     background-color: #23232c;
     color: #FFFFFF;
 }
-/* fin de la <section> ou trouver notre-dame */
 
-/* le <footer> / pied de page */
+/******************** PIED DE PAGE *******************
+----------------------------------------------------*/
 .bg-footer {
     background-color: #23232c;
 }
-/* fin du <footer> / pied de page */
 
-/* responsive */
+/******************** RESPONSIVE *******************
+--------------------------------------------------*/
 /* Very small devices (smaller than 576px) */
 @media (min-width: 320px) {
     .btn-main {
@@ -285,7 +281,7 @@ li.nav-item:hover {
     .havefun {
         display: none !important;
     }
- }
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     .btn-main {
