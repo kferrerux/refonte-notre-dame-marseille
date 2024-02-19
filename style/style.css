@@ -1,0 +1,686 @@
+/* Basilique Notre Dame de la Garde - Refonte par FERRER KEVIN @2024 */
+
+/* Google fonts afin de définir la police que le navigateur devra afficher */
+@import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
+
+/* Sélecteur universel qui va permettre d'initialiser les marges externes/internes à 0, les boites,
+la police d'écriture par défaut et le style des liens (a) par défaut */
+* ::before ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/************************** CORPS DE LA PAGE ****************************
+-----------------------------------------------------------------------*/
+body {
+  background-color: #ffffff;
+}
+
+/************************* BALISE - HEADER ******************************
+-----------------------------------------------------------------------*/
+header {
+  z-index: 3;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid #23232c16;
+}
+
+header nav ul li a {
+  font-family: "Prosto One", "Serif";
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+  color: #23232c;
+  font-size: 0.7rem;
+  list-style: none;
+}
+
+header nav ul li a:hover {
+  font-family: "Prosto One", "Serif";
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+  background-color: #23232c;
+  color: #ffffff;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+}
+
+a.nav-link {
+  font-weight: bold;
+  font-size: 0.7rem;
+  color: #23232c !important;
+}
+
+a.nav-link:hover {
+  font-weight: bold;
+  font-size: 0.7rem;
+  color: #ffffff !important;
+}
+
+li.nav-item:hover {
+  font-weight: bold;
+  font-size: 0.7rem;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+.down {
+  color: #f39e00;
+}
+
+#logo {
+  width: 70px;
+  height: 80px;
+}
+
+#langs img {
+  width: 30px;
+  height: 30px;
+}
+
+/****************************** BALISE MAIN *****************************
+-----------------------------------------------------------------------*/
+.btn-custom {
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  padding: 2%;
+  background-color: #f39e00;
+  color: #ffffff;
+}
+
+.btn-custom:hover {
+  text-decoration: none;
+  font-weight: 700;
+  border-left: 15px solid #23232c;
+  border-right: 15px solid #23232c;
+  padding: 2%;
+  background-color: #ffffff;
+  color: #23232c;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators button {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 100%;
+}
+
+.carousel-indicators .active {
+  background-color: #00ca2c !important;
+  width: 10px !important;
+  transition: all 0.5s ease !important;
+}
+
+.carousel-control-prev-icon {
+  background-color: #00ca2c;
+  border-radius: 100%;
+  padding: 30px;
+}
+
+.carousel-control-next-icon {
+  background-color: #00ca2c;
+  border-radius: 100%;
+  padding: 30px;
+}
+
+.carousel-caption {
+  border-radius: 20px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.879);
+}
+
+/******************** SECTION - HISTOIRE ********************************
+-----------------------------------------------------------------------*/
+#history {
+  background-color: #23232c;
+}
+
+#history img {
+  border-top-left-radius: 20px;
+}
+
+/******************** SECTION - INFORMATIONS ****************************
+-----------------------------------------------------------------------*/
+#infos-cards {
+  border: none !important;
+}
+
+#infos-cards div {
+  border: none !important;
+  padding: 2%;
+}
+
+#infos ul {
+  padding: 5%;
+}
+
+#informations ul li {
+  cursor: pointer;
+  list-style-type: none;
+  padding: 1%;
+  width: 300px;
+}
+
+#informations ul li:hover {
+  background-color: #23232c;
+  color: #ffffff;
+  padding: 1%;
+  text-align: center;
+  transition: all 0.3s ease;
+  transform: scale(1.2);
+  width: 300px;
+}
+
+.bg-infos {
+  background-color: #23232c;
+  border-bottom-right-radius: 20px;
+}
+
+/******************** SECTION - OU TROUVER NOTRE DAME *******************
+-----------------------------------------------------------------------*/
+#serendre {
+  background: url("../assets/imgs/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+#mapinfos {
+  background: url("../assets/imgs/bg_rubriques.jpg") no-repeat left bottom / 15%;
+  background-color: #ffffff;
+}
+
+.accordion-button:hover {
+  background-color: #23232c;
+  color: #ffffff;
+}
+
+/******************** PIED DE PAGE *******************
+----------------------------------------------------*/
+.bg-footer {
+  background-color: #23232c;
+}
+
+/******************** RESPONSIVE *******************
+--------------------------------------------------*/
+/* Very small devices (smaller than 576px) */
+@media (min-width: 320px) {
+  .btn-main:hover {
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    padding: 2%;
+    background-color: #f39e00;
+    color: #ffffff;
+    width: 84% !important;
+    margin-top: -120px !important;
+  }
+  .btn-main {
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    border-left: 15px solid #23232c;
+    padding: 2%;
+    background-color: #ffffff;
+    color: #23232c;
+    margin-top: -100px !important;
+    width: 84% !important;
+    margin-top: -120px !important;
+    transition: all 0.3s ease;
+  }
+  .navbar-collapse {
+    padding: 5%;
+    background-color: #ffffff;
+    color: #23232c;
+    position: absolute;
+    top: 101%;
+    left: -0%;
+    width: 100% !important;
+    margin: 0 !important;
+    border-top: 3px solid #f39e00;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .carousel-inner {
+    display: none;
+  }
+  .carousel-control-prev {
+    display: none !important;
+  }
+  .carousel-control-next {
+    display: none !important;
+  }
+  .carousel-caption {
+    display: none !important;
+  }
+  .carousel-indicators {
+    display: none !important;
+  }
+  #carouselExampleCaptions button {
+    display: none !important;
+  }
+  #history img {
+    border-radius: 0 !important;
+  }
+  /* #history {
+    margin-top: 121px;
+  } */
+  .btn-custom {
+    width: 100% !important;
+    text-align: center;
+  }
+  #form-responsive {
+    width: 100% !important;
+  }
+  #serendre {
+    padding: 0 !important;
+  }
+  #mapinfos {
+    width: 100% !important;
+  }
+  #havefun-d {
+    display: none !important;
+  }
+  .havefun {
+    display: none !important;
+  }
+  #mobileonly {
+    background: url("assets/imgs/slide03.jpg") no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    border-bottom: 3px solid #f39e00;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #mobileonly {
+    background: url("assets/imgs/slide03.jpg") no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    border-bottom: 3px solid #f39e00;
+  }
+  .btn-main:hover {
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    padding: 2%;
+    background-color: #f39e00;
+    color: #ffffff;
+    width: 84% !important;
+    margin-top: -60px !important;
+  }
+  .btn-main {
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    border-left: 15px solid #23232c;
+    padding: 2%;
+    background-color: #ffffff;
+    color: #23232c;
+    margin-top: -60px !important;
+    transition: all 0.3s ease;
+  }
+  .navbar-collapse {
+    padding: 5%;
+    background-color: #ffffff;
+    color: #23232c;
+    position: absolute;
+    top: 101%;
+    left: -0% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    border-top: 3px solid #f39e00;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .carousel-inner {
+    display: none;
+  }
+  .carousel-control-prev {
+    display: none !important;
+  }
+  .carousel-control-next {
+    display: none !important;
+  }
+  .carousel-caption {
+    display: none !important;
+  }
+  .carousel-indicators {
+    display: none !important;
+  }
+  #carouselExampleCaptions button {
+    display: none !important;
+  }
+  #history img {
+    border-radius: 0 !important;
+  }
+  /* #history {
+    margin-top: 121px;
+  } */
+  .btn-custom {
+    width: 40% !important;
+    text-align: center;
+  }
+  #form-responsive {
+    width: 100% !important;
+  }
+  #mapinfos {
+    width: 100% !important;
+  }
+  #havefun-d {
+    display: none !important;
+  }
+  .havefun {
+    display: none !important;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #mobileonly {
+    display: none !important;
+  }
+  .btn-main {
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    padding: 2%;
+    background-color: #f39e00;
+    color: #ffffff;
+    width: 50% !important;
+    margin-top: 0px !important;
+  }
+  .btn-main:hover {
+    text-decoration: none;
+    font-weight: 700;
+    border-left: 15px solid #23232c;
+    padding: 2%;
+    background-color: #ffffff;
+    color: #23232c;
+    margin-top: 0px !important;
+    transition: all 0.3s ease;
+  }
+  .navbar-collapse {
+    padding: 5%;
+    background-color: #ffffff;
+    color: #23232c;
+    position: absolute;
+    top: 101%;
+    left: -15%;
+    width: 100% !important;
+    margin: 0 !important;
+    border-top: 3px solid #f39e00;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .carousel-inner {
+    display: none;
+  }
+  .carousel-control-prev {
+    display: none !important;
+  }
+  .carousel-control-next {
+    display: none !important;
+  }
+  .carousel-caption {
+    display: none !important;
+  }
+  .carousel-indicators {
+    display: none !important;
+  }
+  #carouselExampleCaptions button {
+    display: none !important;
+  }
+  #history img {
+    border-radius: 0 !important;
+  }
+  #history {
+    margin-top: 121px;
+  }
+  .btn-custom {
+    width: 96% !important;
+    text-align: center;
+  }
+  #form-responsive {
+    width: 100% !important;
+  }
+  #mapinfos {
+    width: 100% !important;
+  }
+  #havefun-d {
+    display: none !important;
+  }
+  .havefun {
+    display: none !important;
+  }
+  #mobile-img {
+    display: none;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #mobileonly {
+    display: none !important;
+  }
+  .btn-main {
+    display: none;
+  }
+  .btn-main:hover {
+    all: unset;
+  }
+  .navbar-collapse {
+    all: unset;
+  }
+  .carousel-inner {
+    display: none;
+  }
+  .carousel-control-prev {
+    display: none !important;
+  }
+  .carousel-control-next {
+    display: none !important;
+  }
+  .carousel-caption {
+    display: none !important;
+  }
+  .carousel-indicators {
+    display: none !important;
+  }
+  #carouselExampleCaptions button {
+    display: none !important;
+  }
+  #history img {
+    border-radius: 0 !important;
+  }
+  #history {
+    margin-top: 121px;
+  }
+  .btn-custom {
+    width: 50% !important;
+    text-align: center;
+  }
+  #form-responsive {
+    width: 25% !important;
+  }
+  #serendre {
+    padding: 4% !important;
+  }
+  #mapinfos {
+    width: 45% !important;
+  }
+  #havefun-d {
+    display: block !important;
+  }
+  .havefun {
+    display: block !important;
+    font-size: 90px;
+  }
+  #mobile-img {
+    display: none;
+  }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #mobileonly {
+    display: none !important;
+  }
+  .btn-main {
+    display: block;
+    margin-top: 0%;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    padding: 2%;
+    background-color: #f39e00;
+    color: #ffffff;
+    width: 400px !important;
+    margin-top: unset !important;
+  }
+  .btn-main:hover {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    border-left: 250px solid #23232c;
+    padding: 2%;
+    background-color: #ffffff;
+    color: #23232c;
+    transition: all 0.3s ease;
+  }
+  .navbar-collapse {
+    all: unset;
+  }
+  .carousel-inner {
+    display: block !important;
+  }
+  .carousel-control-prev {
+    display: block !important;
+  }
+  .carousel-control-next {
+    display: block !important;
+  }
+  .carousel-caption {
+    display: block !important;
+  }
+  .carousel-indicators {
+    display: block !important;
+  }
+  #carouselExampleCaptions button {
+    display: block !important;
+  }
+  #history img {
+    border-radius: 0 !important;
+  }
+  #history {
+    margin-top: 0px;
+  }
+  .btn-custom {
+    width: 90% !important;
+    text-align: center;
+  }
+  #form-responsive {
+    width: 25% !important;
+  }
+  #serendre {
+    padding: 4% !important;
+  }
+  #mapinfos {
+    width: 45% !important;
+  }
+  #havefun-d {
+    display: block !important;
+  }
+  .havefun {
+    display: block !important;
+    font-size: 90px;
+  }
+  #mobile-img {
+    display: none;
+  }
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  #mobileonly {
+    display: none !important;
+  }
+  .btn-main {
+    display: block;
+    margin-top: 0%;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    padding: 2%;
+    background-color: #f39e00;
+    color: #ffffff;
+    width: 20% !important;
+  }
+  .btn-main:hover {
+    display: block;
+    margin-top: 0%;
+    text-decoration: none;
+    font-weight: 700;
+    border-left: 100px solid #23232c;
+    padding: 2%;
+    background-color: #ffffff;
+    color: #23232c;
+    width: 50% !important;
+    transition: all 0.3s ease;
+  }
+  .navbar-collapse {
+    all: unset;
+  }
+  .carousel-inner {
+    display: block !important;
+  }
+  .carousel-control-prev {
+    display: block !important;
+  }
+  .carousel-control-next {
+    display: block !important;
+  }
+  .carousel-caption {
+    display: block !important;
+  }
+  .carousel-indicators {
+    display: block !important;
+  }
+  #carouselExampleCaptions button {
+    display: block !important;
+  }
+  #history img {
+    border-radius: 0 !important;
+  }
+  #history {
+    margin-top: 0px;
+  }
+  .btn-custom {
+    width: 90% !important;
+    text-align: center;
+  }
+  #form-responsive {
+    width: 25% !important;
+  }
+  #serendre {
+    padding: 4% !important;
+  }
+  #mapinfos {
+    width: 50% !important;
+  }
+  .havefun {
+    font-size: 90px;
+  }
+  #mobile-img {
+    display: none;
+  }
+}
