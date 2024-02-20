@@ -2,54 +2,39 @@
 //-------------------------------------------
 
 // On vient déclarer l'ensemble des variables
-let imgHistory = document.getElementById("history-img");
-// On log dans la console pour confirmation de sélection de l'élement dans le DOM
-// console.log(imgHistory);
+let historyimg = document.getElementById("history-img");
+let historytext = document.getElementById("history-text");
+let infos = document.getElementById("informations");
+let map = document.getElementById("serendre");
+let video = document.getElementById("video");
 
 // MANIPULATION DOM : APPARITION D'ELEMENT
 // -------------------------------------
 
 // On va venir écouter l'élement au scroll
 document.addEventListener("scroll", () => {
-  // console.log(e);
+  console.log(scrollY);
   // Si la valeur de scrollY est inférieure ou égale à 0
   if (window.scrollY <= 0) {
-    // console.log(scrollY);
-    // Alors l'image est cachée à gauche
-    imgHistory.style.marginLeft = "-10000px";
-    imgHistory.style.transition = "all 0.3s ease";
-    // Si la valeur de scrollY atteint 100
+    historyimg.style.clipPath = "polygon(0 0, 0% 0, 0% 0%, 0px 0%)";
+    historyimg.style.transition = "all 0.5s ease";
   }
-  if (window.scrollY >= 100) {
-    // console.log(scrollY);
-    // Alors l'image apparaît (valeur 0 de left)
-    imgHistory.style.marginLeft = "0";
-    imgHistory.style.transition = "all 0.3s ease";
+
+  if (window.scrollY >= 200) {
+    historyimg.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
+    historyimg.style.transition = "all 0.5s ease";
+  }
+
+  if (window.scrollY >= 600) {
+    infos.style.clipPath = "polygon(0 0, 0% 0, 0% 0%, 0 0%)";
+    infos.style.transition = "all 0.5s ease";
+  }
+
+  if (window.scrollY >= 950) {
+    infos.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
+    infos.style.transition = "all 0.5s ease";
+  }
+
+  if (window.scrollY >= 1700) {
   }
 });
-
-// MANIPULATION DOM : ROTATION D'ELEMENT
-// -------------------------------------
-
-// On va venir écouter l'élement au scroll
-// document.addEventListener('scroll', () => {
-// console.log(e);
-//     Si l'utilisateur scroll sur l'axe vertical à valeur supérieure ou égale à 200
-//     if (window.scrollY <= 200) {
-//     console.log(scrollY);
-//         Alors l'image se met à tourner à 45deg maximum
-//         imgHistory.style.transform = 'rotate(0deg)';
-//         imgHistory.style.transition = 'all 2s ease';
-//     Si l'utilisateur scroll sur l'axe vertical à valeur inférieure ou égale à 500
-//     } if (window.scrollY >= 300) {
-//         console.log(scrollY);
-//         imgHistory.style.transform = 'rotate(45deg)';
-//         imgHistory.style.transition = 'all 2s ease';
-//     } if (window.scrollY >= 800) {
-//     console.log(scrollY);
-//     imgHistory.style.transform = 'rotate(0deg)';
-//     imgHistory.style.transition = 'all 2s ease';
-//     }
-// })
-
-// -------------------------------------

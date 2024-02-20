@@ -6,16 +6,9 @@ include "./php/header.php";
 
 <!------------------------ LE CONTENU MAJEUR (MAIN/SECTIONS/ETC) ------------------------>
 <main>
-    <a href="#video"><i class="down z-3 position-fixed p-3 bottom-0 end-0 fs-1 fa-solid fa-circle-up"></i></a>
-    <!-- <div id="mobileonly">
-        <a href="#serendre"><button class="btn-main fs-4 position-absolute start-50 top-50 translate-middle z-1"
-                type="button">Je visite la Basilique</button></a>
-    </div> -->
+    <a href="#video"><i class="down z-3 position-fixed p-3 bottom-0 end-0 fa-solid fa-circle-up"></i></a>
     <!------------------------ LE CAROUSSEL 100VH ------------------------>
     <video id="video" src="assets/videos/main02.mp4" type="video/mp4" autoplay loop muted playsinline class="container-fluid m-0 p-0"></video>
-    <a class="w-100 btn-custom fs-4 position-absolute start-50 top-75 translate-middle" href="#serendre">Je visite
-        la
-        Basilique</a> -->
     <!-- <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators d-flex justify-content-center">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -60,12 +53,10 @@ include "./php/header.php";
         </button>
     </div>
     <!------------------------ SECTION HISTOIRE ------------------------>
-    <section id="history" class="m-0 p-5 d-flex align-items-center text-white">
-        <div class="row align-items-center fs-4">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
-                <img id="history-img" class="w-100" src="assets/imgs/history.jpg" alt="Image histoire Notre-Dame">
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-7 p-sm-3 p-md-3 p-lg-5">
+    <section id="history" class="d-flex align-items-center m-0 p-5 text-white">
+        <div class="row">
+            <img id="history-img" class="col-12 col-sm-12 col-md-12 col-lg-6" src="assets/imgs/history.jpg" alt="Image histoire Notre-Dame">
+            <div id="history-text" class="col-12 col-sm-12 col-md-12 col-lg-6 p-sm-3 p-md-3 p-lg-5">
                 <h2 class="mt-3 mt-sm-3 mt-md-3 mt-lg-0">Chargée d'histoire</h2>
                 <hr>
                 <p>La Basilique Notre-Dame de la Garde est un monument emblématique situé à Marseille, en France. Son
@@ -80,14 +71,14 @@ include "./php/header.php";
         </div>
     </section>
     <!------------------------ SECTION INFORMATIONS ------------------------>
-    <section id="informations" class="p-5">
-        <div class="align-items-center fs-4">
+    <section id="informations" class="d-flex flex-column align-items-center p-5">
+        <div class="align-items-center">
             <h2 class="text-center">Ce que l'on trouve à Notre-Dame</h2>
-            <p class="text-center">Une multitudes d'activités pour nos visiteurs</p>
+            <h3 class="text-center">Une multitudes d'activités</h3>
             <hr>
         </div>
         <div id="infos-cards" class="row">
-            <div class="fs-5 card col-12 col-sm-12 col-md-6 col-lg-4 my-4 my-sm-0 my-md-4 my-lg-0">
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 my-4 my-sm-0 my-md-4 my-lg-0">
                 <img src="assets/imgs/restaurant.jpeg" class="w-100 h-75 card-img-top" alt="Le restaurant de la Basilique">
                 <div class="card-body">
                     <h5 class="card-title">Le restaurant de la Basilique</h5>
@@ -97,7 +88,7 @@ include "./php/header.php";
                     <a href="#" class="my-3 position-absolute start-50 translate-middle btn-custom">En savoir plus</a>
                 </div>
             </div>
-            <div class="fs-5 card col-12 col-sm-12 col-md-6 col-lg-4 my-4 my-sm-0 my-md-4 my-lg-0">
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-4 my-4 my-sm-0 my-md-4 my-lg-0">
                 <img src="assets/imgs/musee.jpg" class="w-100 h-75 card-img-top" alt="Le musée Notre-Dame de la Garde">
                 <div class="card-body">
                     <h5 class="card-title">Découvrez le musée</h5>
@@ -107,7 +98,7 @@ include "./php/header.php";
                     <a href="#" class="my-3 position-absolute start-50 translate-middle btn-custom">En savoir plus</a>
                 </div>
             </div>
-            <div class="fs-5 card col-12 col-sm-12 col-md-12 col-lg-4 my-4 my-sm-0 my-md-4 my-lg-0">
+            <div class="card col-12 col-sm-12 col-md-12 col-lg-4 my-4 my-sm-0 my-md-4 my-lg-0">
                 <img src="assets/imgs/boutique.jpg" class="w-100 h-75 card-img-top" alt="Evènement à venir">
                 <div class="card-body">
                     <h5 class="card-title">Evènement à venir</h5>
@@ -121,10 +112,10 @@ include "./php/header.php";
         </div>
     </section>
     <!------------------------ SECTION SE RENDRE A ------------------------>
-    <section id="serendre" class="fs-5 p-5 p-sm-0 p-md-5 p-lg-5 d-flex align-items-center">
+    <section id="serendre" class="d-flex align-items-center p-5 p-sm-0 p-md-5 p-lg-5">
         <div id="mapinfos" class="container-fluid p-5 text-justify">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4418.6633033926355!2d5.366459889131449!3d43.283936055566755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0c976b89df5%3A0x89254f95b5ee2ded!2sBasilica%20of%20Notre-Dame%20of%20la%20Garde!5e0!3m2!1sen!2sfr!4v1708359107903!5m2!1sen!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h2>Se rendre à Notre-Dame de la Garde</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4418.6633033926355!2d5.366459889131449!3d43.283936055566755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0c976b89df5%3A0x89254f95b5ee2ded!2sBasilica%20of%20Notre-Dame%20of%20la%20Garde!5e0!3m2!1sen!2sfr!4v1708359107903!5m2!1sen!2sfr" width="100%" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2 class="text-center my-3">Rejoindre la Basilique</h2>
             <hr>
             <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
@@ -194,9 +185,7 @@ include "./php/header.php";
             </h2>
         </div> -->
     </section>
-    <!------------------------ CONTENU MAJEUR (MAIN/SECTIONS/ETC) ------------------------>
 </main>
-<!------------------------ LE PIED DE PAGE ------------------------>
 
 <?php
 

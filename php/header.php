@@ -11,8 +11,10 @@
     <!------------------------ SCRIPTS & CDN'S ------------------------>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script defer src="scripts/navbar.js"></script>
+    <script defer src="scripts/animations.js"></script>
     <script defer src="https://kit.fontawesome.com/a95fff360e.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
     <!------------------------ FIN DES SCRIPTS & CDN'S ------------------------>
     <title>Notre-Dame de La Garde</title>
 </head>
@@ -20,7 +22,7 @@
 <header id="header" class="d-flex align-center row-cols-1 row-cols-sm-1 row-cols-md-10 row-cols-lg-1">
     <nav class="navbar navbar-expand-lg d-flex align-items-center justify-content-around">
         <div id="logodiv">
-            <a href="index.html"><img class="ms-0 ms-sm-0 ms-md-0 ms-lg-5" id="logo" src="assets/imgs/logo.png" alt="Logo Basilique Notre-Dame de la Garde"></a>
+            <a href="index.php"><img class="ms-0 ms-sm-0 ms-md-0 ms-lg-5" id="logo" src="assets/imgs/logo.png" alt="Logo Basilique Notre-Dame de la Garde"></a>
         </div>
         <div class="d-flex align-items-center">
             <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +38,7 @@
                     <a class="nav-link" href="#">BOUTIQUE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ACTIVITES</a>
+                    <a class="nav-link" href="#informations">ACTIVITES</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">FAIRE UN DON</a>
@@ -52,7 +54,7 @@
                     </ul>
                 </li>
             </ul>
-            <form id="form-responsive" class=" d-flex w-25" role="search">
+            <form id="form-responsive" class="d-flex w-25" role="search">
                 <input class="form-control me-2" type="search" placeholder="Recherchez" aria-label="Recherchez">
                 <button class="btn btn-success" type="submit">OK</button>
             </form>

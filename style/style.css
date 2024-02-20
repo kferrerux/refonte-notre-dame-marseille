@@ -2,9 +2,10 @@
 
 /* Google fonts afin de définir la police que le navigateur devra afficher */
 @import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* Sélecteur universel qui va permettre d'initialiser les marges externes/internes à 0, les boites,
 la police d'écriture par défaut et le style des liens (a) par défaut */
+
 * ::before ::after {
   margin: 0;
   padding: 0;
@@ -14,12 +15,33 @@ la police d'écriture par défaut et le style des liens (a) par défaut */
 
 /************************** CORPS DE LA PAGE ****************************
 -----------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "caladea", "serif";
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 3rem !important;
+}
+
 body {
   background-color: #ffffff;
 }
 
 /************************* BALISE - HEADER ******************************
 -----------------------------------------------------------------------*/
+video {
+  filter: contrast(100%) brightness(100%) blur(0.2px);
+  outline: #23232c solid 20px;
+  border-top: 120px solid #ffffff;
+}
+
 header {
   z-index: 3;
   background-color: rgb(255, 255, 255);
@@ -36,7 +58,7 @@ header nav ul li a {
   letter-spacing: 3px;
   cursor: pointer;
   color: #23232c;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   list-style: none;
 }
 
@@ -47,31 +69,32 @@ header nav ul li a:hover {
   cursor: pointer;
   background-color: #23232c;
   color: #ffffff;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   transition: all 0.3s ease;
 }
 
 a.nav-link {
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #23232c !important;
 }
 
 a.nav-link:hover {
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #ffffff !important;
 }
 
 li.nav-item:hover {
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #ffffff !important;
   transition: all 0.3s ease;
 }
 
 .down {
   color: #f39e00;
+  font-size: 3rem;
 }
 
 #logo {
@@ -141,10 +164,6 @@ li.nav-item:hover {
   background-color: #23232c;
 }
 
-#history img {
-  border-top-left-radius: 20px;
-}
-
 /******************** SECTION - INFORMATIONS ****************************
 -----------------------------------------------------------------------*/
 #infos-cards {
@@ -207,7 +226,7 @@ li.nav-item:hover {
   background-color: #23232c;
 }
 
-/******************** RESPONSIVE *******************
+/* ******************* RESPONSIVE *******************
 --------------------------------------------------*/
 /* Very small devices (smaller than 576px) */
 @media (min-width: 320px) {
@@ -266,12 +285,6 @@ li.nav-item:hover {
   #carouselExampleCaptions button {
     display: none !important;
   }
-  #history img {
-    border-radius: 0 !important;
-  }
-  /* #history {
-    margin-top: 121px;
-  } */
   .btn-custom {
     width: 100% !important;
     text-align: center;
@@ -363,12 +376,6 @@ li.nav-item:hover {
   #carouselExampleCaptions button {
     display: none !important;
   }
-  #history img {
-    border-radius: 0 !important;
-  }
-  /* #history {
-    margin-top: 121px;
-  } */
   .btn-custom {
     width: 40% !important;
     text-align: center;
@@ -443,12 +450,6 @@ li.nav-item:hover {
   #carouselExampleCaptions button {
     display: none !important;
   }
-  #history img {
-    border-radius: 0 !important;
-  }
-  #history {
-    margin-top: 121px;
-  }
   .btn-custom {
     width: 96% !important;
     text-align: center;
@@ -500,12 +501,6 @@ li.nav-item:hover {
   }
   #carouselExampleCaptions button {
     display: none !important;
-  }
-  #history img {
-    border-radius: 0 !important;
-  }
-  #history {
-    margin-top: 121px;
   }
   .btn-custom {
     width: 50% !important;
@@ -579,12 +574,6 @@ li.nav-item:hover {
   #carouselExampleCaptions button {
     display: block !important;
   }
-  #history img {
-    border-radius: 0 !important;
-  }
-  #history {
-    margin-top: 0px;
-  }
   .btn-custom {
     width: 90% !important;
     text-align: center;
@@ -657,12 +646,6 @@ li.nav-item:hover {
   }
   #carouselExampleCaptions button {
     display: block !important;
-  }
-  #history img {
-    border-radius: 0 !important;
-  }
-  #history {
-    margin-top: 0px;
   }
   .btn-custom {
     width: 90% !important;
