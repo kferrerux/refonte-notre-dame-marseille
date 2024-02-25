@@ -32,16 +32,16 @@
         <div class="collapse navbar-collapse align-items-center justify-content-around " id="navbarScroll">
             <ul class="navbar-nav navbar-nav-scroll">
                 <li class="nav-item">
-                    <a class="nav-link" href="#serendre">VISITER</a>
+                    <a class="nav-link" href="index.php#serendre">VISITER</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">BOUTIQUE</a>
+                    <a class="nav-link" href="shop.php">BOUTIQUE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#informations">ACTIVITES</a>
+                    <a class="nav-link" href="index.php#informations">ACTIVITES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">FAIRE UN DON</a>
+                    <a class="nav-link" href="404.php">FAIRE UN DON</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -49,8 +49,8 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">FRANCAIS 🇫🇷</a></li>
-                        <li><a class="dropdown-item" href="#">ENGLISH 🇬🇧</a></li>
-                        <li><a class="dropdown-item" href="#">ITALIANO 🇮🇹</a></li>
+                        <li><a class="text-decoration-line-through dropdown-item" href="#">ENGLISH 🇬🇧</a></li>
+                        <li><a class="text-decoration-line-through dropdown-item" href="#">ITALIANO 🇮🇹</a></li>
                     </ul>
                 </li>
             </ul>
@@ -58,6 +58,7 @@
                 <input class="form-control me-2" type="search" placeholder="Recherchez" aria-label="Recherchez">
                 <button class="btn btn-success" type="submit">OK</button>
             </form>
+            <a href="admin-pannel.php"><i class="admin fa-solid fa-gear fs-3"></i></a>
         </div>
     </nav>
 </header>

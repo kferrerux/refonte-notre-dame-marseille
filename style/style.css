@@ -107,6 +107,11 @@ li.nav-item:hover {
   height: 30px;
 }
 
+.admin {
+  color: #23232c;
+  font-size: 3rem;
+}
+
 /****************************** BALISE MAIN *****************************
 -----------------------------------------------------------------------*/
 .btn-custom {
@@ -218,6 +223,50 @@ li.nav-item:hover {
 .accordion-button:hover {
   background-color: #23232c;
   color: #ffffff;
+}
+
+/*************************** BOUTIQUE ***********************************
+-----------------------------------------------------------------------*/
+#boutique {
+  background: url("../assets/imgs/bg_rubriques.jpg") no-repeat;
+  background-position: left bottom;
+  background-size: 10%;
+}
+/* 
+#banner-catalogue {
+  background: url("../assets/imgs/bg-boutique.webp") no-repeat;
+  background-position: top left;
+  background-size: cover;
+  height: 600px;
+} */
+
+#product-card {
+  border: 1px solid #23232c21;
+  border-radius: 10px;
+}
+
+#product-card:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #23232c09;
+}
+
+.btn-card {
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  padding: 2%;
+  background-color: #f39e00;
+  color: #ffffff;
+}
+
+.btn-card:hover {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 2%;
+  background-color: #23232c;
+  color: #ffffff;
+  transition: all 0.3s ease;
 }
 
 /******************** PIED DE PAGE *******************

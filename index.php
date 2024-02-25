@@ -1,13 +1,13 @@
 <?php
 
-include "./php/header.php";
+include "./partials/header.php";
 
 ?>
 
 <!------------------------ LE CONTENU MAJEUR (MAIN/SECTIONS/ETC) ------------------------>
 <main>
     <a href="#video"><i class="down z-3 position-fixed p-3 bottom-0 end-0 fa-solid fa-circle-up"></i></a>
-    <!------------------------ LE CAROUSSEL 100VH ------------------------>
+    <!------------------------ LA VIDEO 100VH ------------------------>
     <video id="video" src="assets/videos/main02.mp4" type="video/mp4" autoplay loop muted playsinline class="container-fluid m-0 p-0"></video>
     <!-- <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators d-flex justify-content-center">
@@ -189,6 +189,6 @@ include "./php/header.php";
 
 <?php
 
-include "./php/footer.php";
+include "./partials/footer.php";
 
 ?>
