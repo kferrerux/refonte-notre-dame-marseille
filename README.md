@@ -10,7 +10,7 @@
 
 ## Aperçu 👀
 
-![harry](https://github.com/kferrerux/refonte-notre-dame-marseille/assets/77007630/a1229be7-31f4-41d1-8201-4fc574f24653)
+![harry](https://github.com/kferrerux/refonte-notre-dame-marseille/assets/77007630/d96d64b4-9597-44e3-98e7-81a09ac81947)
 _<p align=center>Notre-Dame de la Garde - Index</p>_
 
 ## Caractéristiques 🕵️
