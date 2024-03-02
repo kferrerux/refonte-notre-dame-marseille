@@ -33,7 +33,7 @@ que la navigation (expérience utilisateur). **La partie responsive arrivera au 
 - _MySQL_
 - _PHPMyAdmin_
 
-## Comment utiliser ⏯️
+## Comment utiliser // Observer le code ⏯️
 
 a . Clonez ce référentiel
 `bash
@@ -41,6 +41,7 @@ a . Clonez ce référentiel
     `
 
 b . Ouvrez le fichier `index.html` dans votre navigateur
+*(Un hébergement en ligne sera bientôt disponible)*
 
 c . Explorez et appréciez!
 
