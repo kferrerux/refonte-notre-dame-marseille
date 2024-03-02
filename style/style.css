@@ -42,6 +42,10 @@ video {
   border-top: 120px solid #ffffff;
 }
 
+#welcome h1 {
+  font-size: 80px;
+}
+
 header {
   z-index: 3;
   background-color: rgb(255, 255, 255);
@@ -110,6 +114,12 @@ li.nav-item:hover {
 .admin {
   color: #23232c;
   font-size: 3rem;
+}
+
+.admin:hover {
+  color: #f39e00;
+  font-size: 3rem;
+  transition: all 0.3s ease;
 }
 
 /****************************** BALISE MAIN *****************************
@@ -269,6 +279,15 @@ li.nav-item:hover {
   transition: all 0.3s ease;
 }
 
+#catalogue {
+  margin-top: 100px;
+}
+
+.btn-dark:hover {
+  background-color: #ffffff !important;
+  color: #23232c !important;
+}
+
 /******************** PIED DE PAGE *******************
 ----------------------------------------------------*/
 .bg-footer {
@@ -354,7 +373,7 @@ li.nav-item:hover {
     display: none !important;
   }
   #mobileonly {
-    background: url("assets/imgs/slide03.jpg") no-repeat;
+    background: url("../assets/imgs/slide03.jpg") no-repeat;
     background-position: bottom;
     background-size: cover;
     width: 100%;
@@ -365,7 +384,7 @@ li.nav-item:hover {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   #mobileonly {
-    background: url("assets/imgs/slide03.jpg") no-repeat;
+    background: url("../assets/imgs/slide03.jpg") no-repeat;
     background-position: bottom;
     background-size: cover;
     width: 100%;

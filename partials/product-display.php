@@ -18,8 +18,18 @@
                     <a class="btn-card rounded flex-shrink-0 me-3" href="404.php">Ajouter au panier</a>
                 </div>
             </div>
-            <a class="my-5 p-3 w-100 btn btn-outline-dark" href="shop.php">RETOUR AU CATALOGUE</a>
+            <a class="fw-bold my-5 p-3 w-100 btn btn-dark" href="shop.php">RETOUR AU CATALOGUE</a>
+            <div class="d-flex justify-content-center align-items-center">
+                <?php
+                if (isset($_SESSION['admin'])) {
+                ?>
+                    <a class="fw-bold btn btn-warning rounded flex-shrink-0 me-3" href="update-product.php?id=<?= $product['id'] ?>">Modifier le produit</a>
+                    <a class="fw-bold btn btn-danger rounded flex-shrink-0 me-3" href="delete-product.php?id=<?= $product['id'] ?>">Supprimer le produit</a>
+                <?php
+                }
+                ?>
+            </div>
         </div>
-        <hr>
+        <hr class="my-5">
     </div>
 </section>

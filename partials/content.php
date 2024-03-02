@@ -1,61 +1,59 @@
-<?php
-
-include "./partials/header.php";
-
-?>
-
 <!------------------------ LE CONTENU MAJEUR (MAIN/SECTIONS/ETC) ------------------------>
 <main>
     <a href="#video"><i class="down z-3 position-fixed p-3 bottom-0 end-0 fa-solid fa-circle-up"></i></a>
     <!------------------------ LA VIDEO 100VH ------------------------>
-    <video id="video" src="assets/videos/main02.mp4" type="video/mp4" autoplay loop muted playsinline class="container-fluid m-0 p-0"></video>
+    <div id="welcome" class="container-fluid d-flex flex-row-reverse justify-content-center align-items-center vh-100 w-100 m-0 p-0">
+        <div class="w-50 p-5 text-dark">
+            <h1>Basilique<br>
+                Notre-Dame de la Garde</h1>
+            <p>Bienvenue sur le site officiel de la Basilique et bonne visite.</p>
+            <hr class="my-3">
+        </div>
+        <img class="w-50" src="../assets/imgs/001.jpg" alt="Notre-Dame de la Garde">
+    </div>
+    <!-- <video id="video" src="../assets/videos/main02.mp4" type="video/mp4" autoplay loop muted playsinline class="container-fluid m-0 p-0"></video> -->
     <!-- <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators d-flex justify-content-center">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/imgs/slide02.jpg" class="d-block w-100 vh-100" alt="image slider 1">
+                <img src="../assets/imgs/slide02.jpg" class="d-block w-100 vh-100" alt="image slider 1">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Une visite de Notre-Dame</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/imgs/slide03.jpg" class="d-block w-100 vh-100" alt="image slider 2">
+                <img src="../assets/imgs/slide03.jpg" class="d-block w-100 vh-100" alt="image slider 2">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>La beauté de la Basilique</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/imgs/slide01.jpg" class="d-block w-100 vh-100" alt="image slider 3">
+                <img src="../assets/imgs/slide01.jpg" class="d-block w-100 vh-100" alt="image slider 3">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Surplombez Marseille</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div> -->
     <!------------------------ SECTION HISTOIRE ------------------------>
-    <section id="history" class="d-flex align-items-center m-0 p-5 text-white">
+    <section id="history" class="d-flex flex-column align-items-start m-0 p-5 text-white">
         <div class="row">
-            <img id="history-img" class="col-12 col-sm-12 col-md-12 col-lg-6" src="assets/imgs/history.jpg" alt="Image histoire Notre-Dame">
+            <img id="history-img" class="col-12 col-sm-12 col-md-12 col-lg-6" src="../assets/imgs/history.jpg" alt="Image histoire Notre-Dame">
             <div id="history-text" class="col-12 col-sm-12 col-md-12 col-lg-6 p-sm-3 p-md-3 p-lg-5">
                 <h2 class="mt-3 mt-sm-3 mt-md-3 mt-lg-0">Chargée d'histoire</h2>
                 <hr>
@@ -66,7 +64,7 @@ include "./partials/header.php";
                     de la basilique fût posée en 1853 et les travaux ont été supervisés par l'architecte Henri-Jacques
                     Espérandieu. La construction prit fin en 1864.
                 </p>
-                <button class="btn-custom w-100 my-3">En savoir plus</button>
+                <button id="more" class="btn-custom w-100 my-3">En savoir plus</button>
             </div>
         </div>
     </section>
@@ -79,7 +77,7 @@ include "./partials/header.php";
         </div>
         <div id="infos-cards" class="row">
             <div class="card col-12 col-sm-12 col-md-6 col-lg-4 my-4 my-sm-0 my-md-4 my-lg-0">
-                <img src="assets/imgs/restaurant.jpeg" class="w-100 h-75 card-img-top" alt="Le restaurant de la Basilique">
+                <img src="../assets/imgs/restaurant.jpeg" class="w-100 h-75 card-img-top" alt="Le restaurant de la Basilique">
                 <div class="card-body">
                     <h5 class="card-title">Le restaurant de la Basilique</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -89,7 +87,7 @@ include "./partials/header.php";
                 </div>
             </div>
             <div class="card col-12 col-sm-12 col-md-6 col-lg-4 my-4 my-sm-0 my-md-4 my-lg-0">
-                <img src="assets/imgs/musee.jpg" class="w-100 h-75 card-img-top" alt="Le musée Notre-Dame de la Garde">
+                <img src="../assets/imgs/musee.jpg" class="w-100 h-75 card-img-top" alt="Le musée Notre-Dame de la Garde">
                 <div class="card-body">
                     <h5 class="card-title">Découvrez le musée</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -99,7 +97,7 @@ include "./partials/header.php";
                 </div>
             </div>
             <div class="card col-12 col-sm-12 col-md-12 col-lg-4 my-4 my-sm-0 my-md-4 my-lg-0">
-                <img src="assets/imgs/boutique.jpg" class="w-100 h-75 card-img-top" alt="Evènement à venir">
+                <img src="../assets/imgs/boutique.jpg" class="w-100 h-75 card-img-top" alt="Evènement à venir">
                 <div class="card-body">
                     <h5 class="card-title">Evènement à venir</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -186,9 +184,3 @@ include "./partials/header.php";
         </div> -->
     </section>
 </main>
-
-<?php
-
-include "./partials/footer.php";
-
-?>

@@ -1,6 +1,6 @@
 <!-- AFFICHAGE DE LA CARTE PRODUIT
 --------------------------------->
-<div class="vh-100 d-flex flex-row align-items-center justify-content-center">
+<div class="d-flex flex-row align-items-center justify-content-center">
 
     <div id="product-card" class="d-flex justify-content-center card p-3 m-3" style="width: 17rem; height: 28rem;">
         <img class="m-3 align-self-center card-img-top img-fluid" style="width: 10rem; height: 6rem" src="<?= $product['image'] ?>" alt="Image produit">

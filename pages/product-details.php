@@ -1,7 +1,7 @@
 <?php
 
-include "partials/header.php";
-include "database/db-connect.php";
+include "../partials/header.php";
+include "../database/db-connect.php";
 
 ?>
 
@@ -23,7 +23,7 @@ include "database/db-connect.php";
 
             foreach ($products as $product) :
 
-                include "partials/product-display.php";
+                include "../partials/product-display.php";
 
             endforeach
 
@@ -36,6 +36,6 @@ include "database/db-connect.php";
 
 <?php
 
-include "partials/footer.php";
+include "../partials/footer.php";
 
 ?>
