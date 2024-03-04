@@ -1,15 +1,19 @@
 <!------------------------ LE CONTENU MAJEUR (MAIN/SECTIONS/ETC) ------------------------>
 <main>
-    <a href="#video"><i class="down z-3 position-fixed p-3 bottom-0 end-0 fa-solid fa-circle-up"></i></a>
-    <!------------------------ LA VIDEO 100VH ------------------------>
+    <!------------------------ UP ------------------------>
+    <a id="arrowup" href="#welcome-img"><i class="down z-3 position-fixed p-3 bottom-0 end-0 fa-solid fa-circle-up"></i></a>
+    <!------------------------ DOWN ------------------------>
+    <!-- <a id="down" href="#video"><i class="down z-3 position-fixed p-3 bottom-0 end-0 fa-solid fa-circle-down"></i></a> -->
+    <!------------------------ WELCOME ------------------------>
     <div id="welcome" class="container-fluid d-flex flex-row-reverse justify-content-center align-items-center vh-100 w-100 m-0 p-0">
-        <div class="w-50 p-5 text-dark">
+        <div id="welcome-text" class="w-50 p-5 mt-5 text-dark">
             <h1>Basilique<br>
                 Notre-Dame de la Garde</h1>
             <p>Bienvenue sur le site officiel de la Basilique et bonne visite.</p>
             <hr class="my-3">
+            <img id="scrolldown" class="mt-5 position-relative start-50 translate-middle" src="../assets/imgs/scrolldown.png" alt="Scroll down">
         </div>
-        <img class="w-50" src="../assets/imgs/001.jpg" alt="Notre-Dame de la Garde">
+        <img id="welcome-img" class="w-50" src="../assets/imgs/001.jpg" alt="Notre-Dame de la Garde">
     </div>
     <!-- <video id="video" src="../assets/videos/main02.mp4" type="video/mp4" autoplay loop muted playsinline class="container-fluid m-0 p-0"></video> -->
     <!-- <div id="carouselExampleCaptions" class="carousel slide">

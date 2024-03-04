@@ -63,7 +63,7 @@ session_start();
             </ul>
 
             <form id="form-responsive" class="d-flex w-25" role="search">
-                <input class="form-control me-2" type="search" placeholder="Recherchez" aria-label="Recherchez">
+                <input id="search" class="form-control me-2" type="search" placeholder="Recherchez" aria-label="Recherchez">
                 <button class="btn btn-success" type="submit">OK</button>
             </form>
 

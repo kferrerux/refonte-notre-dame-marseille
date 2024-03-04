@@ -1,7 +1,7 @@
-// section - history
+// NOTRE-DAME DE LA GARDE - JAVASCRIPT - 2024 - FERRER KEVIN
 //-------------------------------------------
 
-// On vient déclarer l'ensemble des variables
+// ENSEMBLE DE VARIABLES :
 let history = document.getElementById("history");
 let historyimg = document.getElementById("history-img");
 let historyimg02 = document.getElementById("history-img02");
@@ -10,22 +10,43 @@ let infos = document.getElementById("informations");
 let map = document.getElementById("serendre");
 let video = document.getElementById("video");
 let more = document.getElementById("more");
+let arrowup = document.getElementById("arrowup");
+let welcome = document.getElementById("welcome");
+let welcomeimg = document.getElementById("welcome-img");
+let welcometext = document.getElementById("welcome-text");
+let search = document.getElementById("search");
+let newsearch = document.getElementById("newsearch");
+let header = document.getElementById("header");
+let minus = document.getElementById("minus");
 
-// MANIPULATION DOM : APPARITION D'ELEMENT
+// MANIPULATIONS DOM :
 // -------------------------------------
 
-// On va venir écouter l'élement au scroll
+// ECOUTE DE L'ELEMENT AU "SCROLL"
 document.addEventListener("scroll", () => {
   // console.log(scrollY);
-  // Si la valeur de scrollY est inférieure ou égale à 0
   if (window.scrollY <= 0) {
+    arrowup.style.display = "none";
+    arrowup.style.transition = "all 0.5s ease";
     history.style.scale = "0";
     history.transition = "all 0.5s ease";
+    welcomeimg.style.clipPath =
+      "polygon(0 25%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 25%, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 50%)";
+    welcomeimg.style.transition = "all 1s ease";
+    welcometext.style.opacity = "1";
+    welcometext.style.transition = "all 0.8s ease";
   }
 
   if (window.scrollY >= 200) {
+    arrowup.style.display = "block";
+    arrowup.style.transition = "all 0.5s ease";
     history.style.scale = "1";
-    history.style.transition = "all 0.5s ease";
+    history.style.transition = "all 0.7s ease";
+    welcomeimg.style.clipPath =
+      "polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%)";
+    welcomeimg.style.transition = "all 1s ease";
+    welcometext.style.opacity = "0";
+    welcometext.style.transition = "all 0.8s ease";
   }
 
   if (window.scrollY >= 550) {
@@ -33,7 +54,7 @@ document.addEventListener("scroll", () => {
     infos.style.transition = "all 0.5s ease";
   }
 
-  if (window.scrollY >= 950) {
+  if (window.scrollY >= 750) {
     infos.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
     infos.style.transition = "all 0.5s ease";
   }
@@ -42,12 +63,14 @@ document.addEventListener("scroll", () => {
   }
 });
 
+// ECOUTE DE L'ELEMENT AU "CLICK"
 more.addEventListener("click", () => {
+  history.style.height = "1500px";
   history.innerHTML = `
   <div class="row">
     <img id="history-img" class="col-12 col-sm-12 col-md-12 col-lg-6" src="../assets/imgs/history.jpg" alt="Image histoire Notre-Dame">
       <div id="history-text" class="col-12 col-sm-12 col-md-12 col-lg-6 p-sm-3 p-md-3 p-lg-5">
-          <h2 class="mt-3 mt-sm-3 mt-md-3 mt-lg-0">Chargée d'histoire</h2>
+        <h2 class="mt-3 mt-sm-3 mt-md-3 mt-lg-0">Chargée d'histoire</h2>
           <hr>
           <p>La Basilique Notre-Dame de la Garde est un monument emblématique situé à Marseille, en France. Son
               histoire
@@ -91,6 +114,23 @@ more.addEventListener("click", () => {
       </div>
     </div>
   </div>
+  <i id="minus" style="color: #f39e00;" class="fs-1 align-self-center fa-solid fa-xmark"></i>
 </div>
 `;
+});
+
+search.addEventListener("click", () => {
+  if (!header.classList.contains("search")) {
+    header.classList.add("search");
+    header.style.transition = "all 0.5s ease";
+    header.innerHTML = `
+      <div class="d-flex justify-content-center align-items-center">     
+
+            <input style="font-size: 1.5rem;" id='newsearch' class='w-75 form-control' type='text' placeholder='Rechercher...' aria-label='Search'>
+
+            <a style="font-size: 1.5rem; color: #FFFFFF; text-decoration: none;" href='../pages/404.php' id='search-icon' class='mx-3 btn btn-success align-self-center'>OK</a>
+
+      </div>
+    `;
+  }
 });
