@@ -18,7 +18,8 @@ _<p align=center>Notre-Dame de la Garde - Index</p>_
 **Dernière mise à jour :** _Le 2 Mars 2024_
 
 Ce challenge personnel consiste à proposer une refonte pour le site _notredamedelagarde.fr_ tant sur le plan visuel
-que la navigation (expérience utilisateur). **La partie responsive arrivera au fil du temps**
+que la navigation (expérience utilisateur). 
+**Notons que le site sera bientôt consultable en ligne (avec Base de donnée active)**
 
 ## Technologies utilisées 👨‍💻
 
@@ -41,7 +42,7 @@ a . Clonez ce référentiel
     `
 
 b . Ouvrez le fichier `index.html` dans votre navigateur
-*(Un hébergement en ligne sera bientôt disponible)*
+**(Un hébergement en ligne sera bientôt disponible)**
 
 c . Explorez et appréciez!
 
