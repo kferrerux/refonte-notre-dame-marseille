@@ -1,9 +1,6 @@
-<!------------------------ LE CONTENU MAJEUR (MAIN/SECTIONS/ETC) ------------------------>
 <main>
-    <!------------------------ UP ------------------------>
+    <!------------------------ ARROW UP ------------------------>
     <a id="arrowup" href="#welcome-img"><i class="down z-3 position-fixed p-3 bottom-0 end-0 fa-solid fa-circle-up"></i></a>
-    <!------------------------ DOWN ------------------------>
-    <!-- <a id="down" href="#video"><i class="down z-3 position-fixed p-3 bottom-0 end-0 fa-solid fa-circle-down"></i></a> -->
     <!------------------------ WELCOME ------------------------>
     <div id="welcome" class="container-fluid d-flex flex-row-reverse justify-content-center align-items-center vh-100 w-100 m-0 p-0">
         <div id="welcome-text" class="w-50 p-5 mt-5 text-dark">

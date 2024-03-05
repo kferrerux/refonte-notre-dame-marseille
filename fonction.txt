@@ -1,0 +1,13 @@
+const dataTest = () => {
+    #code
+}
+
+dataTest();
+
+
+function dataTest() {
+    #code
+}
+
+dataTest();
+
