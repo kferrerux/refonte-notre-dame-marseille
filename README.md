@@ -41,7 +41,7 @@ a . Clonez ce référentiel
     git clone https://github.com/kferrerux/refonte-notre-dame-marseille.git
     `
 
-b . Ouvrez le fichier `index.html` dans votre navigateur
+b . Ouvrez le fichier `pages/index.php` dans votre navigateur ou votre éditeur de code
 **(Un hébergement en ligne sera bientôt disponible)**
 
 c . Explorez et appréciez!
