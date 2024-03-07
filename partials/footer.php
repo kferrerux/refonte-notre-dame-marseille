@@ -1,5 +1,5 @@
-<div id="bg-footer" style="width: 100%; height: 100px; background: url(../assets/imgs/bg-boutique.webp) no-repeat center center fixed" class="w-100 bg-secondary">
-</div>
+<!-- <div id="bg-footer" style="width: 100%; height: 100px; background: url(../assets/imgs/bg-boutique.webp) no-repeat center center fixed" class="w-100 bg-secondary">
+</div> -->
 <footer class="w-100 bg-footer text-white p-3">
     <div class="bg-footer p-3 text-white row w-100">
         <div class="col-12 col-sm-12 col-md-12 my-md-5 my-lg-0 col-lg-3">

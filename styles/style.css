@@ -1,0 +1,341 @@
+/* Basilique Notre Dame de la Garde - Refonte par FERRER KEVIN @2024 */
+
+/* Google fonts afin de définir la police que le navigateur devra afficher */
+@import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* Sélecteur universel qui va permettre d'initialiser les marges externes/internes à 0, les boites,
+la police d'écriture par défaut et le style des liens (a) par défaut */
+
+* ::before ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/************************** CORPS DE LA PAGE ****************************
+-----------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "caladea", "serif";
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 3rem !important;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/************************* BALISE - HEADER ******************************
+-----------------------------------------------------------------------*/
+video {
+  filter: contrast(100%) brightness(100%) blur(0.2px);
+  outline: #23232c solid 20px;
+  border-top: 120px solid #ffffff;
+}
+
+/* #welcome-img {
+  clip-path: polygon(
+    10% 25%,
+    35% 25%,
+    35% 0%,
+    65% 0%,
+    65% 25%,
+    90% 25%,
+    90% 50%,
+    65% 50%,
+    65% 100%,
+    35% 100%,
+    35% 50%,
+    10% 50%
+  );
+} */
+
+#welcome h1 {
+  /* margin-top: 150px !important; */
+  font-size: 80px;
+}
+
+#scrolldown {
+  width: 15%;
+  margin-top: 80px !important;
+  animation: scrolldownicon 0.5s infinite;
+  animation-timing-function: 0.5 ease-in-out;
+  animation-direction: alternate;
+}
+
+header {
+  z-index: 3;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid #23232c16;
+}
+
+header nav ul li a {
+  font-family: "Prosto One", "Serif";
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+  color: #23232c;
+  font-size: 0.8rem;
+  list-style: none;
+}
+
+header nav ul li a:hover {
+  font-family: "Prosto One", "Serif";
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+  background-color: #23232c;
+  color: #ffffff;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.search {
+  width: 100%;
+  height: 240px;
+  position: fixed;
+}
+
+a.nav-link {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #23232c !important;
+}
+
+a.nav-link:hover {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #ffffff !important;
+}
+
+li.nav-item:hover {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+.down {
+  color: #f39e00;
+  font-size: 3rem;
+}
+
+#logo {
+  width: 70px;
+  height: 80px;
+}
+
+#langs img {
+  width: 30px;
+  height: 30px;
+}
+
+.admin {
+  color: #23232c;
+  font-size: 3rem;
+}
+
+.admin:hover {
+  color: #f39e00;
+  font-size: 3rem;
+  transition: all 0.3s ease;
+}
+
+/****************************** BALISE MAIN *****************************
+-----------------------------------------------------------------------*/
+.btn-custom {
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  padding: 2%;
+  background-color: #f39e00;
+  color: #ffffff;
+}
+
+.btn-custom:hover {
+  text-decoration: none;
+  font-weight: 700;
+  border-left: 15px solid #23232c;
+  border-right: 15px solid #23232c;
+  padding: 2%;
+  background-color: #ffffff;
+  color: #23232c;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators button {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 100%;
+}
+
+.carousel-indicators .active {
+  background-color: #00ca2c !important;
+  width: 10px !important;
+  transition: all 0.5s ease !important;
+}
+
+.carousel-control-prev-icon {
+  background-color: #00ca2c;
+  border-radius: 100%;
+  padding: 30px;
+}
+
+.carousel-control-next-icon {
+  background-color: #00ca2c;
+  border-radius: 100%;
+  padding: 30px;
+}
+
+.carousel-caption {
+  border-radius: 20px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.879);
+}
+
+/******************** SECTION - HISTOIRE ********************************
+-----------------------------------------------------------------------*/
+#history {
+  background-color: #23232c;
+}
+
+/******************** SECTION - INFORMATIONS ****************************
+-----------------------------------------------------------------------*/
+#infos-cards {
+  border: none !important;
+}
+
+#infos-cards div {
+  border: none !important;
+  padding: 2%;
+}
+
+#infos ul {
+  padding: 5%;
+}
+
+#informations ul li {
+  cursor: pointer;
+  list-style-type: none;
+  padding: 1%;
+  width: 300px;
+}
+
+#informations ul li:hover {
+  background-color: #23232c;
+  color: #ffffff;
+  padding: 1%;
+  text-align: center;
+  transition: all 0.3s ease;
+  transform: scale(1.2);
+  width: 300px;
+}
+
+.bg-infos {
+  background-color: #23232c;
+  border-bottom-right-radius: 20px;
+}
+
+/******************** SECTION - OU TROUVER NOTRE DAME *******************
+-----------------------------------------------------------------------*/
+#serendre {
+  background: url("../assets/imgs/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+#mapinfos {
+  background: url("../assets/imgs/bg_rubriques.jpg") no-repeat left bottom / 15%;
+  background-color: #ffffff;
+}
+
+.accordion-button:hover {
+  background-color: #23232c;
+  color: #ffffff;
+}
+
+/*************************** BOUTIQUE ***********************************
+-----------------------------------------------------------------------*/
+#boutique {
+  background: url("../assets/imgs/bg_rubriques.jpg") no-repeat;
+  background-position: left bottom;
+  background-size: 10%;
+}
+/* 
+#banner-catalogue {
+  background: url("../assets/imgs/bg-boutique.webp") no-repeat;
+  background-position: top left;
+  background-size: cover;
+  height: 600px;
+} */
+
+#product-card {
+  border: 1px solid #23232c21;
+  border-radius: 10px;
+}
+
+#product-card:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #23232c09;
+}
+
+.btn-card {
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  padding: 2%;
+  background-color: #f39e00;
+  color: #ffffff;
+}
+
+.btn-card:hover {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 2%;
+  background-color: #23232c;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+#catalogue {
+  margin-top: 100px;
+}
+
+.btn-dark:hover {
+  background-color: #ffffff !important;
+  color: #23232c !important;
+}
+
+/******************** PIED DE PAGE *******************
+----------------------------------------------------*/
+.bg-footer {
+  background-color: #23232c;
+}
+
+/******************** ANIMATIONS ****************************
+-----------------------------------------------------------------------*/
+
+@keyframes scrolldownicon {
+  from {
+    opacity: 0;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(12);
+  }
+}

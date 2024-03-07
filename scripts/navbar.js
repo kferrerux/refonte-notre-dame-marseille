@@ -1,10 +1,10 @@
 // NAVBAR RESPONSIVE
 //-------------------------------------------
 
-// Initialisation de la variable scroll à valeur 0
+// VARIABLE SCROLL 0
 let scroll = 0;
 
-// Evènement d'écoute au scroll (fonction fléché)
+// EVENEMENT AU SCROLL
 window.addEventListener("scroll", () => {
   // Structure conditionnelle
   // Si la valeur de scroll verticale(Y) est inférieure à la valeur de la variable scroll (0)
@@ -27,5 +27,19 @@ window.addEventListener("scroll", () => {
   //  console.log(scroll);
 });
 
-// FIN DE LA NAVBAR RESPONSIVE
-//-------------------------------------------
+// FONCTION RECHERCHE DYNAMIQUE
+function searchbar() {
+  search.addEventListener("click", (e) => {
+    e.stopPropagation();
+    header.classList.add("search");
+    header.style.transition = "all 0.5s ease";
+    // console.log(header);
+  });
+
+  document.body.addEventListener("click", () => {
+    header.classList.remove("search");
+    header.style.transition = "all 0.5s ease";
+    // console.log("body clicked");
+  });
+}
+searchbar();

@@ -59,11 +59,9 @@ require_once "../database/db-connect.php";
 
                     if ($_POST['username'] == $adminUsername && password_verify($userPassword, $adminPassword)) {
 
-                        $_SESSION['admin'] = $_POST['username'];
+                        $_SESSION['admin'] = true;
                         session_start();
-
-                        // var_dump($_SESSION);
-                        header('Location: admin-pannel.php');
+                        header('location: admin-pannel.php');
                     } else {
 
                         echo '<p style="border-radius : 10px; padding: 10px; text-align: center; width: 100%; background-color: red; font-size: 16px; font-weight: bold; align-self: center; color: white;">Nom d\'utilisateur ou mot de passe invalide' . '</p>';

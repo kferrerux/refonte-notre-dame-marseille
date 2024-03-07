@@ -1,17 +1,28 @@
 <main>
+
     <!------------------------ ARROW UP ------------------------>
     <a id="arrowup" href="#welcome-img"><i class="down z-3 position-fixed p-3 bottom-0 end-0 fa-solid fa-circle-up"></i></a>
+
     <!------------------------ WELCOME ------------------------>
-    <div id="welcome" class="container-fluid d-flex flex-row-reverse justify-content-center align-items-center vh-100 w-100 m-0 p-0">
-        <div id="welcome-text" class="w-50 p-5 mt-5 text-dark">
+    <section id="welcome" class="row vh-100 d-flex align-items-center justify-content-center m-0 p-0">
+
+        <div id="welcome-img" class="h-100 col col-12 col-sm-12 col-md-12 col-lg-6 m-0 p-0">
+            <img class="w-100" src="../assets/imgs/001.jpg" alt="Notre-Dame de la Garde">
+        </div>
+        <div id="welcome-text" class="col col-sm-12 col-md-6 col-lg-6 p-5 text-dark">
             <h1>Basilique<br>
-                Notre-Dame de la Garde</h1>
+                Notre-Dame de la Garde
+            </h1>
             <p>Bienvenue sur le site officiel de la Basilique et bonne visite.</p>
             <hr class="my-3">
-            <img id="scrolldown" class="mt-5 position-relative start-50 translate-middle" src="../assets/imgs/scrolldown.png" alt="Scroll down">
+            <!-- <img id="scrolldown" class="position-relative start-50 translate-middle" src="../assets/imgs/scrolldown.png" alt="Scroll down"> -->
+            <form id="form-responsive" class="d-flex" role="search">
+                <input id="search" class="form-control me-2" type="search" placeholder="Recherchez dans la boutique" aria-label="Recherchez">
+                <button class="btn btn-success" type="submit">OK</button>
+            </form>
         </div>
-        <img id="welcome-img" class="w-50" src="../assets/imgs/001.jpg" alt="Notre-Dame de la Garde">
-    </div>
+        <img id="bg-mobile" class="p-0 position-absolute bottom-0" src="../assets/imgs/bg-rubrique02.png" alt="">
+    </section>
     <!-- <video id="video" src="../assets/videos/main02.mp4" type="video/mp4" autoplay loop muted playsinline class="container-fluid m-0 p-0"></video> -->
     <!-- <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators d-flex justify-content-center">
@@ -51,6 +62,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div> -->
+
     <!------------------------ SECTION HISTOIRE ------------------------>
     <section id="history" class="d-flex flex-column align-items-start m-0 p-5 text-white">
         <div class="row">
@@ -69,6 +81,7 @@
             </div>
         </div>
     </section>
+
     <!------------------------ SECTION INFORMATIONS ------------------------>
     <section id="informations" class="d-flex flex-column align-items-center p-5">
         <div class="align-items-center">
@@ -110,6 +123,7 @@
             </div>
         </div>
     </section>
+
     <!------------------------ SECTION SE RENDRE A ------------------------>
     <section id="serendre" class="d-flex align-items-center p-5 p-sm-0 p-md-5 p-lg-5">
         <div id="mapinfos" class="container-fluid p-5 text-justify">
@@ -184,4 +198,5 @@
             </h2>
         </div> -->
     </section>
+
 </main>

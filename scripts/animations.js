@@ -32,8 +32,6 @@ document.addEventListener("scroll", () => {
     welcomeimg.style.clipPath =
       "polygon(0 25%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 25%, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 50%)";
     welcomeimg.style.transition = "all 1s ease";
-    welcometext.style.opacity = "1";
-    welcometext.style.transition = "all 0.8s ease";
   }
 
   if (window.scrollY >= 200) {
@@ -44,8 +42,6 @@ document.addEventListener("scroll", () => {
     welcomeimg.style.clipPath =
       "polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%)";
     welcomeimg.style.transition = "all 1s ease";
-    welcometext.style.opacity = "0";
-    welcometext.style.transition = "all 0.8s ease";
   }
 
   if (window.scrollY >= 550) {
@@ -105,7 +101,7 @@ more.addEventListener("click", () => {
   </p>
   </div>    
   <div>
-  <img id="history-img02" class=" img-fluid w-100" src="../assetshistoryimg02.webp" alt="Notre Dame Historique">
+  <img id="history-img02" class=" img-fluid w-100" src="../assets/imgs/historyimg02.webp" alt="Notre Dame Historique">
   </div>
   </div>
   </div>
@@ -114,25 +110,4 @@ more.addEventListener("click", () => {
   </div>
 
   `;
-});
-
-search.addEventListener("click", () => {
-  if (!header.classList.contains("search")) {
-    header.classList.add("search");
-    header.style.transition = "all 0.5s ease";
-    header.innerHTML = `
-      <div class="d-flex justify-content-center align-items-center">     
-
-        <input id="test" style="font-size: 1.5rem;" id='search' class='w-75 form-control' type='text' placeholder='Rechercher...' aria-label='Search'>
-
-        <a style="font-size: 1.5rem; color: #FFFFFF; text-decoration: none;" href='../pages/404.php' id='search-icon' class='mx-3 btn btn-success align-self-center'>OK</a>
-
-      </div>
-    `;
-  }
-  const test = document.getElementById("test");
-  console.log(test);
-  test.addEventListener("input", (e) => {
-    console.log(e.target.value);
-  });
 });
