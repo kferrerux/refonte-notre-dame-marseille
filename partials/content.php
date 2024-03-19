@@ -1,7 +1,7 @@
 <main>
 
     <!------------------------ ARROW UP ------------------------>
-    <a id="arrowup" href="#welcome-img"><i class="down z-3 position-fixed p-3 bottom-0 end-0 fa-solid fa-circle-up"></i></a>
+    <a id="arrowup" href="#welcome"><i class="down z-3 position-fixed p-3 bottom-0 end-0 fa-solid fa-circle-up"></i></a>
 
     <!------------------------ WELCOME ------------------------>
     <section id="welcome" class="row vh-100 d-flex align-items-center justify-content-center m-0 p-0">

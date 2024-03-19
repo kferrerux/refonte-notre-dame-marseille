@@ -34,43 +34,45 @@ require_once "../database/db-connect.php";
 
             <?php
 
-            // RECUPERATION DES DONNEES DE L'ADMIN
-            $sql = "SELECT * FROM administration";
-            $stmt = $db->prepare($sql);
-            $stmt->execute();
-            // FETCHALL : ON RECUPERE UN TABLEAU DE TABLEAU
-            $admins = $stmt->fetch(PDO::FETCH_ASSOC);
-            // var_dump();
-
-            $adminUsername = $admins['username'];
-            $adminPassword = $admins['password'];
-
-            // HASHAGE DU MOT DE PASSE
-            $userPassword = $_POST['password'];
-            $hashedPassword = password_hash($userPassword, PASSWORD_DEFAULT);
-
-            // var_dump($userPassword);
-            // var_dump($hashedPassword);
-
-            // CONDITION DE CONNEXION
+            // ON VERIFIE LA SOUMISSION DU FORMULAIRE
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
+                // ON VERIFIE SI LES VARIABLES SONT DEFINIES
                 if (isset($_POST['username']) && isset($_POST['password'])) {
+                    // ON RECUPERE LES DONNES DE L'ADMINISTRATEUR
+                    $sql = "SELECT * FROM administration";
+                    $stmt = $db->prepare($sql);
+                    $stmt->execute();
+                    $admin = $stmt->fetch(PDO::FETCH_ASSOC);
 
-                    if ($_POST['username'] == $adminUsername && password_verify($userPassword, $adminPassword)) {
+                    // ICI NOUS ALLONS VERIFIER QUE LES DONNEES EXISTENT
+                    if ($admin) {
+                        // Récupération des informations d'identification de l'administrateur
+                        $adminUsername = $admin['username'];
+                        $adminPassword = $admin['password'];
 
-                        $_SESSION['admin'] = true;
-                        session_start();
-                        header('location: admin-pannel.php');
+                        // ON RECUPERE LE MOT DE PASSE SAISIE PAR L'UTILISATEUR
+                        $userPassword = $_POST['password'];
+
+                        // SI LE MOT DE PASSE N'EST PAS VIDE
+                        if (!empty($userPassword)) {
+                            // VERIFICATION INFORMATIONS D'IDENTIFICATION
+                            if ($_POST['username'] == $adminUsername && password_verify($userPassword, $adminPassword)) {
+                                $_SESSION['admin'] = true;
+                            } else {
+                                echo '<p style="border-radius: 10px; padding: 10px; text-align: center; width: 100%; background-color: red; font-size: 16px; font-weight: bold; align-self: center; color: white;">Nom d\'utilisateur ou mot de passe invalide</p>';
+                            }
+                        } else {
+                            echo '<p style="border-radius: 10px; padding: 10px; text-align: center; width: 100%; background-color: red; font-size: 16px; font-weight: bold; align-self: center; color: white;">Veuillez saisir un mot de passe</p>';
+                        }
                     } else {
-
-                        echo '<p style="border-radius : 10px; padding: 10px; text-align: center; width: 100%; background-color: red; font-size: 16px; font-weight: bold; align-self: center; color: white;">Nom d\'utilisateur ou mot de passe invalide' . '</p>';
+                        echo '<p style="border-radius: 10px; padding: 10px; text-align: center; width: 100%; background-color: red; font-size: 16px; font-weight: bold; align-self: center; color: white;">Aucun administrateur trouvé</p>';
                     }
+                } else {
+                    echo '<p style="border-radius: 10px; padding: 10px; text-align: center; width: 100%; background-color: red; font-size: 16px; font-weight: bold; align-self: center; color: white;">Veuillez saisir un nom d\'utilisateur et un mot de passe</p>';
                 }
             }
 
             ?>
-
 
         </div>
 

@@ -3,8 +3,6 @@
 include "../partials/header.php";
 require "../database/db-connect.php";
 
-session_start();
-
 ?>
 
 <!------------------------ LE CONTENU MAJEUR (MAIN/SECTIONS/ETC) ------------------------>

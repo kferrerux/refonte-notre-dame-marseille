@@ -3,8 +3,6 @@
 include "../partials/header.php";
 require_once "../database/db-connect.php";
 
-session_start();
-
 if (isset($_SESSION['admin'])) {
 
 ?>

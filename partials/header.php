@@ -1,7 +1,8 @@
 <?php
 
-include "../database/db-connect.php";
 session_start();
+
+include "../database/db-connect.php";
 
 ?>
 

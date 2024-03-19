@@ -209,6 +209,7 @@ li.nav-item:hover {
 -----------------------------------------------------------------------*/
 #history {
   background-color: #23232c;
+  transition: height 0.5s ease-in-out;
 }
 
 /******************** SECTION - INFORMATIONS ****************************
