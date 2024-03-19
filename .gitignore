@@ -1,9 +1,1 @@
 database/db-connect.php
-
-# try {
-# $db = new PDO('mysql:host=db5015488948.hosting-data.io;dbname=dbs12655734;charset=utf8', 'dbu5570741', 'EdenManon.');
-# } catch (Exception $e) {
-# echo
-
-# die('Erreur : ' . $e->getMessage());
-# }
