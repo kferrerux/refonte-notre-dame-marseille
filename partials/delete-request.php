@@ -1,19 +1,13 @@
-    <?php
+<?php
+require_once dirname(__DIR__) . "/database/db-connect.php";
 
-    include "db-connect.php";
+$id = $_GET['id'];
 
-    // RECUPERATION DE L'ID VIA L'URL
-    $id = $_GET['id'];
+if ($_GET['id'] == $id) {
+    $sql = "DELETE FROM catalogue WHERE ID = $id";
+    $stmt = $db->prepare($sql);
+    $stmt->execute();
+}
 
-    // SUPRESSION DE L'ELEMENT
-    if ($_GET['id'] == $id) {
-        $sql = "DELETE FROM catalogue WHERE ID = $id";
-        $stmt = $db->prepare($sql);
-        $stmt->execute();
-
-        var_dump($stmt);
-    }
-
-    header("Location: ../admin-pannel.php");
-
-    ?>
+header("Location: ../pages/admin-pannel.php");
+exit();

@@ -1,8 +1,6 @@
 <?php
-
-include "../partials/header.php";
-require "../database/db-connect.php";
-
+include dirname(__DIR__) . "/partials/header.php";
+require_once dirname(__DIR__) . "/database/db-connect.php";
 ?>
 
 <!------------------------ LE CONTENU MAJEUR (MAIN/SECTIONS/ETC) ------------------------>
@@ -42,6 +40,5 @@ require "../database/db-connect.php";
 </main>
 
 <?php
-
-include "../partials/footer.php";
+include dirname(__DIR__) . "/partials/footer.php";
 ?>

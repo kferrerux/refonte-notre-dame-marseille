@@ -95,7 +95,7 @@
     display: none !important;
   }
   #mobileonly {
-    background: url("../assets/imgs/slide03.jpg") no-repeat;
+    background: url("../../assets/imgs/slide03.jpg") no-repeat;
     background-position: bottom;
     background-size: cover;
     width: 100%;
@@ -128,7 +128,7 @@
   }
 
   #mobileonly {
-    background: url("../assets/imgs/slide03.jpg") no-repeat;
+    background: url("../../assets/imgs/slide03.jpg") no-repeat;
     background-position: bottom;
     background-size: cover;
     width: 100%;

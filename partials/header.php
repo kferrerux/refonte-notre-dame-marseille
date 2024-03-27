@@ -1,9 +1,6 @@
 <?php
-
 session_start();
-
-include "../database/db-connect.php";
-
+include dirname(__DIR__) . "/database/db-connect.php";
 ?>
 
 <!DOCTYPE html>
@@ -14,15 +11,15 @@ include "../database/db-connect.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!------------------------ LES STYLES ------------------------>
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/medias.css">
+    <link rel="stylesheet" href="/notredamerefonte/assets/styles/style.css">
+    <link rel=" stylesheet" href="/notredamerefonte/assets/styles/medias.css">
 
     <!------------------------ SCRIPTS & CDN'S ------------------------>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script defer src="../scripts/navbar.js"></script>
-    <script defer src="../scripts/animations.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="/notredamerefonte/scripts/navbar.js"></script>
+    <script defer src="/notredamerefonte/scripts/animations.js"></script>
     <script defer src="https://kit.fontawesome.com/a95fff360e.js" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <title>Notre-Dame de La Garde</title>
 </head>
@@ -31,7 +28,7 @@ include "../database/db-connect.php";
 <header id="header" class="d-flex align-center row-cols-1 row-cols-sm-1 row-cols-md-10 row-cols-lg-1">
     <nav class="navbar navbar-expand-lg d-flex align-items-center justify-content-around">
         <div id="logodiv">
-            <a href="../pages/index.php"><img class="ms-0 ms-sm-0 ms-md-0 ms-lg-5" id="logo" src="../assets/imgs/logo.png" alt="Logo Basilique Notre-Dame de la Garde"></a>
+            <a href="/notredamerefonte/index.php"><img class="ms-0 ms-sm-0 ms-md-0 ms-lg-5" id="logo" src="/notredamerefonte/assets/imgs/logo_lg.png" alt="Logo Basilique Notre-Dame de la Garde"></a>
         </div>
         <div class="d-flex align-items-center">
             <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,56 +38,46 @@ include "../database/db-connect.php";
         <div class="collapse navbar-collapse align-items-center justify-content-around " id="navbarScroll">
             <ul class="navbar-nav navbar-nav-scroll">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php#serendre">VISITER</a>
+                    <a class="fs-6 nav-link" href="/notredamerefonte/index.php#serendre">VISITER</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../pages/shop.php">BOUTIQUE</a>
+                    <a class="fs-6 nav-link" href="/notredamerefonte/pages/shop.php">BOUTIQUE</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php#informations">ACTIVITES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/404.php">FAIRE UN DON</a>
-                </li>
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        LANGUES
+                <li class="nav-item dropdown">
+                    <a class="fs-6 nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        LES ACTIVITES
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">FRANCAIS 🇫🇷</a></li>
-                        <li><a class="text-decoration-line-through dropdown-item" href="#">ENGLISH 🇬🇧</a></li>
-                        <li><a class="text-decoration-line-through dropdown-item" href="#">ITALIANO 🇮🇹</a></li>
+                        <li><a class="fs-6 dropdown-item" href="/notredamerefonte/pages/restaurant.php">Le Restaurant</a></li>
+                        <li><a class="fs-6 dropdown-item" href="/notredamerefonte/pages/musee.php">Le Musée</a></li>
+                        <li><a class="fs-6 dropdown-item" href="/notredamerefonte/pages/404.php">Les Evènements</a></li>
                     </ul>
-                </li> -->
+                </li>
+                <li class="mx-2 nav-item">
+                    <a id="don" class="my-lg-0 my-xl-0 my-xxl-0 my-sm-2 my-md-2 fs-6 nav-link" href="/notredamerefonte/pages/404.php">FAIRE UN DON</a>
+                </li>
             </ul>
 
-            <!-- <form id="form-responsive" class="d-flex w-25" role="search">
-                <input id="search" class="form-control me-2" type="search" placeholder="Recherchez dans la boutique" aria-label="Recherchez">
-                <button class="btn btn-success" type="submit">OK</button>
-            </form> -->
-
             <div class="d-flex align-items-center justify-content-center">
-
                 <div class="mx-5 fs-4 d-flex align-items-center justify-content-between">
                     🇫🇷
                     🇬🇧
                     🇮🇹
                 </div>
-
                 <?php
                 if (isset($_SESSION['admin'])) {
                 ?>
-                    <a href="../pages/admin-pannel.php"><i class="mx-3 fs-3 admin fa-solid fa-gear"></i></a>
-                    <a href="../database/session-logout.php"><i class="fs-3 admin fa-solid fa-right-from-bracket"></i></a>
+                    <a href="pages/admin-pannel.php"><i class="mx-3 fs-3 admin fa-solid fa-gear"></i></a>
+                    <a href="/notredamerefonte/database/session-logout.php"><i style="color: red" class="fs-3 admin fa-solid fa-right-from-bracket"></i></a>
+                    <img src="https://api.dicebear.com/8.x/avataaars/svg?seed=administrateur@gmail.com" alt="avatar" class="border border-1 border-grey mx-2" style="width: 37px; height: 37px; border-radius: 50%;">
 
                 <?php
                 } else {
                 ?>
-                    <a href="admin-login.php"><i class="fs-3 admin fa-solid fa-user"></i></a>
+                    <a href="/notredamerefonte/pages/admin-login.php"><i class="fs-3 admin fa-solid fa-lock"></i></a>
                 <?php
                 }
                 ?>
-
             </div>
 
         </div>

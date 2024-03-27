@@ -1,8 +1,6 @@
 <?php
-
-include "../partials/header.php";
-include "../database/db-connect.php";
-
+include dirname(__DIR__) . "/partials/header.php";
+require_once dirname(__DIR__) . "/database/db-connect.php";
 ?>
 
 <!------------------------ LE CONTENU MAJEUR (MAIN/SECTIONS/ETC) ------------------------>
@@ -11,6 +9,7 @@ include "../database/db-connect.php";
     <!------------------------ LE CATALOGUE ------------------------>
     <section id="product-page" class="d-flex justify-content-center align-items-center m-0 p-5 text-black">
         <div class="container d-flex flex-wrap justify-content-center align-items-center m-0 p-5 text-black">
+
             <?php
 
             $id = $_GET['id'];
@@ -35,7 +34,5 @@ include "../database/db-connect.php";
 </main>
 
 <?php
-
-include "../partials/footer.php";
-
+include dirname(__DIR__) . "/partials/footer.php";
 ?>

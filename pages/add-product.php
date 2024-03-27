@@ -1,8 +1,6 @@
 <?php
-
-include "../partials/header.php";
-require_once "../database/db-connect.php";
-
+include dirname(__DIR__) . "/partials/header.php";
+require_once dirname(__DIR__) . "/database/db-connect.php";
 ?>
 
 <!------------------------ ADMINISTRATION BASE DE DONNEE ------------------------>
@@ -42,7 +40,5 @@ require_once "../database/db-connect.php";
 </main>
 
 <?php
-
-include "../partials/footer.php";
-
+include dirname(__DIR__) . "/partials/footer.php";
 ?>

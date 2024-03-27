@@ -4,10 +4,9 @@
     <a id="arrowup" href="#welcome"><i class="down z-3 position-fixed p-3 bottom-0 end-0 fa-solid fa-circle-up"></i></a>
 
     <!------------------------ WELCOME ------------------------>
-    <section id="welcome" class="row vh-100 d-flex align-items-center justify-content-center m-0 p-0">
-
+    <section id="welcome" class="container-fluid vh-100 d-flex align-items-center justify-content-center m-0 p-0">
         <div id="welcome-img" class="h-100 col col-12 col-sm-12 col-md-12 col-lg-6 m-0 p-0">
-            <img class="w-100" src="../assets/imgs/001.jpg" alt="Notre-Dame de la Garde">
+            <img class="w-100" src="assets/imgs/001.jpg" alt="Notre-Dame de la Garde">
         </div>
         <div id="welcome-text" class="col col-sm-12 col-md-6 col-lg-6 p-5 text-dark">
             <h1>Basilique<br>
@@ -15,15 +14,16 @@
             </h1>
             <p>Bienvenue sur le site officiel de la Basilique et bonne visite.</p>
             <hr class="my-3">
-            <!-- <img id="scrolldown" class="position-relative start-50 translate-middle" src="../assets/imgs/scrolldown.png" alt="Scroll down"> -->
             <form id="form-responsive" class="d-flex" role="search">
-                <input id="search" class="form-control me-2" type="search" placeholder="Recherchez dans la boutique" aria-label="Recherchez">
-                <button class="btn btn-success" type="submit">OK</button>
+                <input id="search" class="form-control me-2" type="search" placeholder="Rechercher sur le site" aria-label="Recherchez">
+                <button class="rounded-0 btn btn-success" type="submit">OK</button>
             </form>
         </div>
-        <img id="bg-mobile" class="p-0 position-absolute bottom-0" src="../assets/imgs/bg-rubrique02.png" alt="">
+        <img id="bg-mobile" class="img-fluid m-0 p-0 position-absolute bottom-0" src="assets/imgs/bg-rubrique02.png" alt="">
     </section>
+
     <!-- <video id="video" src="../assets/videos/main02.mp4" type="video/mp4" autoplay loop muted playsinline class="container-fluid m-0 p-0"></video> -->
+
     <!-- <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators d-flex justify-content-center">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -64,24 +64,38 @@
     </div> -->
 
     <!------------------------ SECTION HISTOIRE ------------------------>
-    <section id="history" class="d-flex flex-column align-items-start m-0 p-5 text-white">
+    <section id="history" class="container-fluid d-flex flex-column align-items-start justify-content-center m-0 p-5 text-white">
         <div class="row">
-            <img id="history-img" class="col-12 col-sm-12 col-md-12 col-lg-6" src="../assets/imgs/history.jpg" alt="Image histoire Notre-Dame">
-            <div id="history-text" class="col-12 col-sm-12 col-md-12 col-lg-6 p-sm-3 p-md-3 p-lg-5">
-                <h2 class="mt-3 mt-sm-3 mt-md-3 mt-lg-0">Chargée d'histoire</h2>
-                <hr>
-                <p>La Basilique Notre-Dame de la Garde est un monument emblématique situé à Marseille, en France. Son
-                    histoire
-                    remonte au Moyen Âge, la construction de la basilique actuelle a débuté au XIXe siècle, la première
-                    pierre
-                    de la basilique fût posée en 1853 et les travaux ont été supervisés par l'architecte Henri-Jacques
-                    Espérandieu. La construction prit fin en 1864.
-                </p>
-                <button id="more" class="btn-custom w-100 my-3">En savoir plus</button>
+            <div id="informations" class="col-12 col-sm-12 col-md-12 col-lg-12 p-sm-3 p-md-3 p-lg-5">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-sm-3 p-md-3 p-lg-5">
+                        <h2 class="mt-3 mt-sm-3 mt-md-3 mt-lg-0">«De chez moi, je la vois et je lui parle !»</h2>
+                        <hr>
+                        <p>Elle fait partie de la vie des Marseillais. On l’associe aux joies. Quand on s’absente de Marseille, au retour, on la guette des yeux.</p>
+
+                        <p>La Bonne Mère ! Bien sûr, il y a le site géographique : unique, pour découvrir Marseille dans toute son ampleur !
+                            Mais il y a plus : Marie, la Mère qui présente son Fils, et quel Fils ! Image de tendresse et de bonté. Offert à tous, pour tous.</p>
+
+                        <p>Puis il y a la colline. On y monte lentement, avec effort, fatigue, le regard baissé sur ses pieds, la tête parfois levée vers le sommet, dos à la cité, dos courbé par l’effort, mais aussi les soucis de la vie, les choses lourdes à déposer. Et au retour, on descend avec légèreté, sourire, joie, émerveillement.
+                            Des yeux, on cherche son quartier, son église, ses repères. On n’est plus seul.
+                            Elle redescend avec nous.</p>
+
+                        <p>Visiteurs de ce site Internet, nous voudrions vous faire partager tout ce que la Bonne Mère représente pour nous : plus qu’un paysage, plus qu’un sanctuaire, une Mère !
+                            Pour cela, voici quelques informations pour faciliter votre visite, votre pèlerinage, votre passage. Surtout, ne passez pas en courant ! Arrêtez-vous un instant, fermez les yeux, osez lui parler, vous confier.
+                            A vrai dire, elle vous attend !
+                        </p>
+                        <h3><strong>Bienvenue chez votre « Bonne Mère ».</strong></h3>
+                        <strong>Georges PONTIER,</strong>
+                        <i>Archevêque de Marseille</i>
+                        </p>
+                    </div>
+                    <div>
+                        <img id="history-img02" class=" img-fluid w-100" src="assets/imgs/historyimg02.webp" alt="Notre Dame Historique">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
     <!------------------------ SECTION INFORMATIONS ------------------------>
     <section id="informations" class="d-flex flex-column align-items-center p-5">
         <div class="align-items-center">
@@ -91,41 +105,33 @@
         </div>
         <div id="infos-cards" class="row">
             <div class="card col-12 col-sm-12 col-md-6 col-lg-4 my-4 my-sm-0 my-md-4 my-lg-0">
-                <img src="../assets/imgs/restaurant.jpeg" class="w-100 h-75 card-img-top" alt="Le restaurant de la Basilique">
+                <img src="assets/imgs/restaurant.jpeg" class="w-100 h-75 card-img-top" alt="Le restaurant de la Basilique">
                 <div class="card-body">
                     <h5 class="card-title">Le restaurant de la Basilique</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    <a href="#" class="my-3 position-absolute start-50 translate-middle btn-custom">En savoir plus</a>
+                    <p class="card-text">Un cadre fraternel, de la cuisine de qualité.</p>
+                    <a href="pages/restaurant.php" class="my-3 position-absolute start-50 translate-middle btn-custom">En savoir plus</a>
                 </div>
             </div>
             <div class="card col-12 col-sm-12 col-md-6 col-lg-4 my-4 my-sm-0 my-md-4 my-lg-0">
-                <img src="../assets/imgs/musee.jpg" class="w-100 h-75 card-img-top" alt="Le musée Notre-Dame de la Garde">
+                <img src="assets/imgs/musee.jpg" class="w-100 h-75 card-img-top" alt="Le musée Notre-Dame de la Garde">
                 <div class="card-body">
                     <h5 class="card-title">Découvrez le musée</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    <a href="#" class="my-3 position-absolute start-50 translate-middle btn-custom">En savoir plus</a>
+                    <p class="card-text">Un moment de piété unique, pour vous et les votres.</p>
+                    <a href="pages/musee.php" class="my-3 position-absolute start-50 translate-middle btn-custom">En savoir plus</a>
                 </div>
             </div>
             <div class="card col-12 col-sm-12 col-md-12 col-lg-4 my-4 my-sm-0 my-md-4 my-lg-0">
-                <img src="../assets/imgs/boutique.jpg" class="w-100 h-75 card-img-top" alt="Evènement à venir">
+                <img src="assets/imgs/boutique.jpg" class="w-100 h-75 card-img-top" alt="Evènement à venir">
                 <div class="card-body">
                     <h5 class="card-title">Evènement à venir</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    <a href="#" class="my-3 position-absolute start-50 translate-middle btn-custom btn-md">En savoir
-                        plus</a>
+                    <p class="card-text">Tenez vous informé sur les prochains evènements.</p>
+                    <a href="/notredamerefonte/pages/404.php" class="my-3 position-absolute start-50 translate-middle btn-custom btn-md">En savoir plus</a>
                 </div>
             </div>
         </div>
     </section>
-
     <!------------------------ SECTION SE RENDRE A ------------------------>
-    <section id="serendre" class="d-flex align-items-center p-5 p-sm-0 p-md-5 p-lg-5">
+    <section id="serendre" class="container-fluid d-flex align-items-center p-sm-0 p-md-5 p-lg-5">
         <div id="mapinfos" class="container-fluid p-5 text-justify">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4418.6633033926355!2d5.366459889131449!3d43.283936055566755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0c976b89df5%3A0x89254f95b5ee2ded!2sBasilica%20of%20Notre-Dame%20of%20la%20Garde!5e0!3m2!1sen!2sfr!4v1708359107903!5m2!1sen!2sfr" width="100%" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <h2 class="text-center my-3">Rejoindre la Basilique</h2>
@@ -192,11 +198,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div id="havefun-d" class="ms-4">
-            <h2 class="ms-3 havefun text-white text-center">BONNE VISITE <br>
-                <hr> A TOUS
-            </h2>
-        </div> -->
     </section>
 
 </main>

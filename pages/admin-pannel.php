@@ -1,10 +1,8 @@
 <?php
-
-include "../partials/header.php";
-require_once "../database/db-connect.php";
+include dirname(__DIR__) . "/partials/header.php";
+require_once dirname(__DIR__) . "/database/db-connect.php";
 
 if (isset($_SESSION['admin'])) {
-
 ?>
 
     <!------------------------ ADMINISTRATION BASE DE DONNEE ------------------------>
@@ -56,9 +54,7 @@ if (isset($_SESSION['admin'])) {
                     </div>
 
                 <?php
-
                 endforeach;
-
                 ?>
             </div>
 
@@ -66,15 +62,11 @@ if (isset($_SESSION['admin'])) {
     </main>
 
     <?php
-
-    include "../partials/footer.php";
-
+    include dirname(__DIR__) . "/partials/footer.php";
     ?>
 
 <?php
-
 } else {
-    header("Location: index.php");
+    header("Location: /notredamerefonte/pages/admin-login.php");
 }
-
 ?>

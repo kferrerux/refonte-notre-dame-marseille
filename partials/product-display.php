@@ -1,6 +1,5 @@
 <!-- AFFICHAGE DE LA PAGE DU PRODUIT
 ----------------------------------->
-
 <section id="product" class="p-5">
     <div class="container px-4 px-lg-5 my-5">
         <div class="row gx-4 gx-lg-5 align-items-center">
@@ -24,7 +23,7 @@
                 if (isset($_SESSION['admin'])) {
                 ?>
                     <a class="fw-bold btn btn-warning rounded flex-shrink-0 me-3" href="update-product.php?id=<?= $product['id'] ?>">Modifier le produit</a>
-                    <a class="fw-bold btn btn-danger rounded flex-shrink-0 me-3" href="delete-product.php?id=<?= $product['id'] ?>">Supprimer le produit</a>
+                    <a class="fw-bold btn btn-danger rounded flex-shrink-0 me-3" href="../partials/delete-request.php?id=<?= $product['id'] ?>">Supprimer le produit</a>
                 <?php
                 }
                 ?>

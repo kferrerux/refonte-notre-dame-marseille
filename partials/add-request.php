@@ -12,7 +12,6 @@
 <body class="bg-light text-black">
 
     <?php
-
     include "../database/db-connect.php";
 
     $_SERVER["REQUEST_METHOD"] == "POST";
@@ -20,8 +19,6 @@
     $titre = $_POST['titre'];
     $description = $_POST['description'];
     $image = $_POST['image'];
-
-    // var_dump($_POST);
 
     ?>
 
@@ -33,8 +30,8 @@
 
                 <h1 class="mb-3 text-center">👍</h1>
                 <p class="text-center fw-bold">Le produit a bien été ajouté au catalogue</p>
-
                 <?php
+
                 try {
                     // REQUETE
                     $sql = "INSERT INTO catalogue SET titre = '$titre', description = '$description', image = '$image'";
@@ -49,7 +46,6 @@
                 }
 
                 ?>
-
             </div>
 
             <a class="text-white btn btn-success" href="../pages/admin-pannel.php">Retour page d'administration</a>
