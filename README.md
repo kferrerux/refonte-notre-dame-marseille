@@ -15,7 +15,7 @@ _<p align=center>Notre-Dame de la Garde - Index</p>_
 
 ## Caractéristiques 🕵️
 
-**Dernière mise à jour :** _Le 2 Mars 2024_
+**Dernière mise à jour :** _Le 27 Mars 2024_
 
 Ce challenge personnel consiste à proposer une refonte pour le site _notredamedelagarde.fr_ tant sur le plan visuel
 que la navigation (expérience utilisateur). 
